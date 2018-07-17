@@ -1,0 +1,102 @@
+<!-- Main Content -->
+<div class="main-content">
+    <!-- Main Tab -->
+    <div class="main-tab js-tab-parent">
+        <div class="tab-head bg-gradient5">
+            <span class="tab-span tab-link js-tab-child active" data-lang="tabAllGames"></span>
+            <span class="tab-span tab-link js-tab-child" data-lang="tabFinished"></span>
+            <span class="tab-span tab-link js-tab-child" data-lang="tabLive" data-type="live"></span>
+            <span class="tab-span tab-link js-tab-child" data-lang="tabScheduled"></span>
+            <span class="tab-span tab-link js-tab-child" data-type="my-games"> <span data-lang="tabMyGames"></span> <span
+                    id="favorite-text" class="display-none">(<span>0</span>)</span></span>
+
+            <div class="date" data-num="0">
+                <div class="left icon-arrow-left js-day-calendar" data-type="left"></div>
+                <div class="calendar-block">
+                    <input type="hidden" style="margin-right: 100px;" id="datepicker">
+                </div>
+                <div class="left icon-arrow-right js-day-calendar" data-type="right"></div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+        <div class="tab-content app-match-container">
+
+            <div class="tab-content-head" id="home-page-date">
+                <div class="date mb-10">&nbsp;</div>
+            </div>
+
+            <!-- Clone Row -->
+            <div class="display-none tab-block-clone app-match-table-clone">
+
+                <div class="soccer-list match-list-content">
+                    <div class="list-head js-element favorite-head">
+                        <div class="star js-favorite" data-terms="1" data-type="tournament"><i
+                                class="icon icon-star"></i></div>
+                        <img class="photo" src="/style/path/img/al.png">
+                        <div class="name"><span>&nbsp;</span> <a>&nbsp;</a></div>
+                    </div>
+
+                </div>
+
+                <div class="list-container __match_list-container">
+                    <div class="list js-element __match_list_block">
+                        <a class="link js-match-link"></a>
+                        <div class="star js-favorite" data-terms="1" data-type="match"><i class="icon icon-star"></i>
+                        </div>
+                        <div class="time __t-time">&nbsp;</div>
+                        <div class="team-home"> &nbsp;</div>
+                        <div class="score">
+                            <span class="home __home-num"> &nbsp;</span>
+                            <span>-</span>
+                            <span class="away __away-num"> &nbsp;</span>
+                        </div>
+                        <div class="team-away"> &nbsp;</div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Clone Row End -->
+
+            <!-- All Games -->
+            <div class="app-match-all-games tab-block active"></div>
+            <!-- All Games End -->
+
+            <!-- Finished Games -->
+            <div class="app-match-finished-games tab-block"></div>
+            <!-- Finished Games End -->
+
+            <!-- Live Games -->
+            <div class="app-match-live-games tab-block"></div>
+            <!-- Live Games End -->
+
+            <!-- Scheduled Games -->
+            <div class="app-match-scheduled-games tab-block"></div>
+            <!-- Scheduled Games End -->
+
+            <!-- My Games -->
+            <div class="soccer-list match-list-content display-none" id="app-match-content">
+                <div class="list-container display-none" id="app-match-list">
+                    <div class="list js-element">
+                        <a class="link js-match-link"></a>
+                        <div class="star js-favorite" data-terms="1" data-type="match"><i class="icon icon-star"></i>
+                        </div>
+                        <div class="time">&nbsp;</div>
+                        <div class="team-home"> &nbsp;</div>
+                        <div class="score">
+                            <span class="home"> &nbsp;</span>
+                            <span>-</span>
+                            <span class="away"> &nbsp;</span>
+                        </div>
+                        <div class="team-away"> &nbsp;</div>
+                    </div>
+                </div>
+            </div>
+            <div class="app-match-my-games tab-block"></div>
+            <!-- My Games End -->
+
+        </div>
+    </div>
+    <!-- Main Tab End -->
+</div>
+<!-- Main Content End -->

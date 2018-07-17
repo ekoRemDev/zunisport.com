@@ -1,0 +1,80 @@
+/* DOCUMENT INFORMATION
+	- Document: ZuniSport Web Project
+	- Version:  1.0
+	- Author:   Azeroglu Emin
+	- Font: Arial
+*/
+/* Grid */
+$grid: (
+        containerW: 1200px, // Container Width
+        containerH: auto, // Container Height
+        headerW: 100%, // Header Width
+        headerH: 200px, // Header Height
+        logoW: 260px, // Logo Width
+        logoH: 145px, // Logo Height
+        asideW: 220px, // Aside Width
+        asideH: auto, // Aside Height
+        modalDefaultW: 500px // Modal Default Width
+);
+/* Grid End */
+
+/* Color */
+$color: (
+        color1: #000,
+        color2: #39b54a,
+        color3: #ffffff,
+        color4: #242424,
+        color5: #333,
+        color6: #4d4d4d,
+        color7: #cccccc,
+        color8: #eeeeee,
+        color9: rgba(39,129,49,0.4),
+        color10: #28a745,
+        color11: #020502,
+        color12: #e6e6e6,
+        color13: #212529,
+        color14: #448452,
+        color15: #c6c6c6,
+        color16: #616161,
+        color17: #123d14,
+        color18: #373d44,
+        color19: #111111,
+        color20: #d8c866,
+        color21: #928744,
+        color22: #ffbbbb,
+        color23: #7b3030,
+        color24: #a7a7a7,
+        color25: #bda618,
+        color26: #2e7d32,
+        color27: #263238,
+        color28: #1c2426,
+        color29: #efa5a5,
+        color30: #101516,
+        color31: #2a3538,
+        color32: #7cb342,
+        color33: #1b5e20,
+        color34: #efefef,
+        color35: #ffffff,
+        color36: #f9f9f9,
+        color37: #a3eaf9,
+        color38: #abbbcc,
+        color39: #e3e3e3,
+        color40: #a0a0a0,
+        color41: #455a64,
+        color42: #121719,
+        colorSuccess: #15bb16,
+        colorDanger: #dc2426,
+        colorWarning: #f4af43,
+        bgcolor1: #1c2426,
+        bgcolor2: #1c2426,
+        bgcolor3: #f2f2f2,
+);
+/* Color End */
+
+/* Borer Radius */
+$borderRadius: (2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 17, 18, 19, 20);
+/* Borer Radius End */
+
+/* Columns */
+$columns: (50, 70, 100, 278, 280, 300, 310, 500);
+/* Columns End */

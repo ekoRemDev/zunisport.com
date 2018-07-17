@@ -1,0 +1,85 @@
+<div class="main-content main-tab page-favorite page-tournament js-tab-parent">
+
+    <div class="tab-head">
+        <span class="tab-link js-tab-child active">
+            <i class="icon icon-calendar5"></i>
+            <span class="txt" data-lang="txtMatch"></span>
+        </span>
+        <span class="tab-link js-tab-child">
+            <i class="icon icon-teams1"></i>
+            <span class="txt" data-lang="txtTeam"></span>
+        </span>
+        <span class="tab-link app-table-tab js-tab-child">
+            <i class="icon icon-cup"></i>
+            <span class="txt" data-lang="txtTournament"></span>
+        </span>
+    </div>
+
+    <!-- Match -->
+    <div class="list-cont display-none" id="app-match-list">
+        <div class="list js-element">
+            <a href="#" class="link js-match-link"></a>
+            <div class="star js-favorite" data-terms="1">
+                <i class="icon icon-star"></i>
+            </div>
+            <div class="teams">
+                <div class="t-home score">
+                    <span class="name team-home"></span>
+                    <span class="num home">&nbsp;</span>
+                </div>
+                <div class="t-away score">
+                    <span class="name team-away"></span>
+                    <span class="num away">&nbsp;</span>
+                </div>
+            </div>
+            <div class="date time">&nbsp;</div>
+        </div>
+    </div>
+    <section class="tab-block active match-block">
+        <div class="app-block">
+            <div class="block-content" id="app-match-content">
+
+            </div>
+        </div>
+    </section>
+    <!-- Match End -->
+
+    <!-- Team -->
+    <div class="list-default js-element display-none" id="app-round-list">
+        <a href="#" class="link"></a>
+        <div class="star js-favorite" data-terms="1">
+            <i class="icon icon-star"></i>
+        </div>
+        <div class="inner team">
+            <div class="name">&nbsp;</div>
+        </div>
+    </div>
+    <section class="tab-block default-list-content" id="app-round-team">
+        <div class="error-default error-button">
+            <span class="txt" data-lang="txtNoAvaible"></span>
+            <button type="submit" class="button button-success radius-3 js-login-modal" data-lang="txtRegisterBtn"></button>
+        </div>
+    </section>
+    <!-- Team End -->
+
+    <!-- Tournament -->
+    <div class="list-default js-element display-none" id="app-list-tournament">
+        <a href="#" class="link"></a>
+        <div class="star js-favorite" data-terms="1">
+            <i class="icon icon-star"></i>
+        </div>
+        <div class="inner tournament">
+            <div class="name">&nbsp;</div>
+            <div class="subname">&nbsp;</div>
+        </div>
+        <img src="" alt="" class="photo">
+    </div>
+    <section class="tab-block default-list-content" id="app-round-tournament">
+        <div class="error-default error-button">
+            <span class="txt" data-lang="txtNoAvaible"></span>
+            <button type="submit" class="button button-success radius-3 js-login-modal" data-lang="txtRegisterBtn"></button>
+        </div>
+    </section>
+    <!-- Tournament End -->
+
+</div>

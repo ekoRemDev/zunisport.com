@@ -1,0 +1,2294 @@
+/* DOCUMENT INFORMATION
+	- Document: ZuniSport Web Project
+	- Version:  1.0
+	- Author:   Azeroglu Emin  
+	- Font: Arial
+*/
+
+/* Body */
+body {
+  background-color: map-get($color, color1);
+}
+
+/* Container */
+#container {
+  width: map-get($grid, containerW);
+  height: map-get($grid, containerH);
+  margin: 0 auto;
+}
+.container-block {
+  padding-bottom: 20px;
+  background-color: rgba(0,0,0,0.9);
+}
+
+#app-container {
+  background-color: map-get($color, color36);
+}
+
+
+
+/* Loading Gif */
+.loading-gif {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2000;
+  background-color: rgba(0,0,0,.7);
+}
+.loading-gif .gif {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0,0,0,.7);
+}
+
+/* Header */
+header.header {
+  width: map-get($grid, headerW);
+  height: map-get($grid, headerH);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* Logo */
+header.header .logo {
+  margin-left: 30px;
+  margin-top: 55px;
+  float: left;
+}
+header.header .logo .soccer-span {
+  width: 50px;
+  height: 145px;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+header.header .logo a{
+  width: map-get($grid, logoW);
+  height: map-get($grid, logoH);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+}
+/* Language */
+header.header .language {
+  display: inline-block;
+  float: right;
+  margin-top: 110px;
+  margin-right: 20px;
+  width: 150px;
+}
+header.header .language .form-block .form-selectbox .select .default {
+  color: map-get($color, color3);
+}
+header.header .language .scroll-wrapper {
+  top: 42px !important;
+}
+header.header .language .scroll-wrapper .sc-content {
+  max-height: 225px;
+}
+
+/* Aside */
+aside.left,
+aside.right {
+  width: map-get($grid, asideW);
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+/* Round Block */
+.round-block {
+  width: 100%;
+}
+.round-block .head {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: map-get($color, color13);
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.round-block .head .icon {
+  margin-right: 5px;
+}
+.round-block .block-content {
+  width: 100%;
+  padding: 15px;
+  margin-top: 8px;
+  background-color: map-get($color, color6);
+  color: map-get($color, color3);
+  line-height: 20px;
+  font-size: 13px;
+}
+.round-block .layer {
+  border: 4px solid map-get($color, color5);
+}
+.round-block .layer .content-text {
+  float: left;
+  font-size: 13px;
+}
+.round-block .layer .form-block {
+  float: left;
+  width: auto;
+  font-size: 14px;
+  margin-left: 8px;
+  width: 75px;
+}
+.round-block .layer .form-block select {
+  width: 90px;
+  font-size: 13px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  top: -2.5px;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  cursor:pointer;
+  color: #fff;
+  outline: none !important;
+}
+.round-block .layer .form-block select option {
+  color: #fff;
+  background-color: #4d4d4d;
+}
+.round-block .layer .form-selectbox .select .default {
+  height: 20px;
+  overflow: hidden;
+  line-height: inherit;
+}
+.round-block .layer .form-selectbox .select .options {
+  height: 220px;
+  overflow: hidden;
+  overflow-y: auto;
+  width: auto !important;
+}
+.round-block .layer .form-selectbox .select .scroll-wrapper {
+  top: 35px;
+  left: inherit;
+  right: -21px;
+}
+.round-block .layer .form-selectbox .select .scroll-wrapper .sc-content {
+  padding: 10px 0 !important;
+}
+.round-block .layer .form-selectbox .select .scroll-wrapper .option:hover
+{
+  background-color: map-get($color, color5);
+}
+// .round-block .layer .form-selectbox .select .scroll-wrapper .option.active {
+//   background: map-get($color, color37);
+// }
+.round-block .layer .form-selectbox .select .scroll-wrapper .option.active {
+  background: map-get($color, color2);
+  color: map-get($color, color6);
+}
+.round-block  .round-content-block {
+  width: 100%;
+  overflow: hidden;
+  background: map-get($color, color5);
+  margin-top: 8px;
+  padding: 5px;
+}
+.round-block  .round-content-block .list {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 8px;
+  background-color: map-get($color, color6);
+  height: 40px;
+  padding: 0 10px;
+}
+.round-block  .round-content-block .list .link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 30px;
+  bottom: 0;
+  z-index: 10;
+}
+.round-block  .round-content-block .list .photo {
+  width: 24px;
+  margin: 8px 8px 8px 0;
+  float: left;
+}
+.round-block  .round-content-block .list .name {
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 13px;
+  font-weight: 500;
+  color: map-get($color, color35);
+  float: left;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.round-block  .round-content-block .list .icon {
+  float: right;
+  font-size: 11px;
+  line-height: 43px;
+  cursor: pointer;
+  @include transition(color .3s);
+}
+.round-block  .round-content-block .list .icon:hover {
+  color: map-get($color, color2);
+}
+/* Round Block End */
+
+/* Section Main */
+section.main {
+  width: 680px;
+  background: map-get($color, color12);
+  float: left;
+  @include border-radius(5px);
+  overflow: hidden;
+}
+/* Section Main End */
+
+/* Navbar Block */
+.navbar-block {
+  width: 100%;
+  height: 45px;
+  overflow: hidden;
+}
+.navbar-block .link {
+  height: 45px;
+  line-height: 45px;
+  display: block;
+  padding: 0 15px;
+  float: left;
+  color: map-get($color, color3) !important;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  @include transition(all .2s);
+}
+.navbar-block .link .icon {
+  font-size: 20px;
+  float: left;
+  margin-right: 5px;
+}
+.navbar-block .search-button {
+  float: right;
+  cursor: pointer;
+}
+.navbar-block .search-button .icon {
+  margin: 0 !important;
+  text-align: center;
+}
+.navbar-block .link.active,
+.navbar-block .link:hover {
+  background-color: map-get($color, color36);
+  color: map-get($color, color1) !important;
+}
+/* Navbar Block End */
+
+/* Main Content */
+.main-content {
+  width: 100%;
+  padding: 15px;
+  overflow: hidden;
+}
+/* Main Content End */
+
+/* Main Tab */
+.main-tab, .main-tab .tab-head {
+  width: 100%;
+}
+.main-tab .tab-head {
+  height: 50px;
+  border-bottom: 10px solid map-get($color, color33);
+  @include border-radius-separate(5px, 5px, 0, 0);
+  overflow: hidden;
+}
+.main-tab .tab-head .tab-span {
+  height: 40px;
+  width: 111px;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 40px;
+  padding: 0 10px;
+  cursor: pointer;
+  color: map-get($color, color14);
+  font-weight: 500;
+  font-size: 13px;
+  display: block;
+  float: left;
+  text-align: center;
+}
+.main-tab .tab-head .tab-span.active {
+  background-image: linear-gradient(180deg, map-get($color, color2), map-get($color, color33));
+  color: #fff;
+}
+.main-tab .tab-head .date {
+  float: right;
+  background-image: linear-gradient(180deg, map-get($color, color2), map-get($color, color33));
+  color: map-get($color, color3);
+  padding-left: 10px;
+  font-size: 14px;
+}
+.main-tab .tab-head .date div {
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+  cursor: pointer;
+  @include transition(color .2s);
+}
+.main-tab .tab-head .date div:hover {
+  color: map-get($color, color12);
+}
+.main-tab .tab-content {
+  width: 100%;
+  overflow: hidden;
+}
+.main-tab .tab-content .tab-content-head {
+  width: 100%;
+  border-bottom: 10px solid map-get($color, color2);
+  margin-top: 15px;
+}
+.main-tab .tab-content .tab-content-head .date {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  background-color: map-get($color, color4);
+  color: map-get($color, color3);
+  float: left;
+  font-size: 11.5px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.tab-content .tab-block {
+  display: none;
+}
+.tab-content .tab-block.active {
+  display: block;
+}
+.no-data {
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px;
+  @include color(bg, 39);
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+}
+.h2h,
+.h2h .head {
+  width: 100%;
+}
+.h2h {
+  @include color(bg, 5);
+}
+.h2h .head {
+  height: 30px !important;
+  line-height: 30px !important;
+  @include color(bg, 5);
+  @include color(color, 3);
+  padding: 0 20px;
+  font-size: 14px;
+}
+.h2h .lists .list {
+  width: 100%;
+  padding: 10px 20px;
+  @include color(bg, 6);
+  overflow: hidden;
+  position: relative;
+}
+.h2h .lists .list .link {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.h2h .lists .list div {
+  float: left;
+  font-size: 14px;
+}
+.h2h .lists .list .star {
+  width: 40px;
+  @include color(bg, 5);
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  @include color(color, 6);
+  font-size: 20px;
+  @include border-radius(50%);
+  margin-right: 15px;
+  cursor: pointer;
+}
+.h2h .lists .list .star.active {
+  color: #28a745 !important;
+}
+
+.h2h .lists .list .name {
+  width: 530px;
+  height: 40px;
+  overflow: hidden;
+}
+.h2h .lists .list .name .number {
+  float: right;
+  @include color(color, 2);
+  font-weight: 500;
+}
+.h2h .lists .list .name .team {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  @include color(color, 3);
+}
+.h2h .lists .list .score {
+  float: right;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  @include color(color, 3);
+  @include color(bg, 5);
+  @include border-radius(50%);
+  font-width: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 11px;
+}
+.h2h .lists .list .score.live {
+  background: map-get($color, color2);
+  color: map-get($color, color3);
+}
+.h2h .lists .list .score.win {
+  background-color: map-get($color, colorSuccess);
+  color: #fff;
+}
+.h2h .lists .list .score.draw {
+  background-color: map-get($color, colorDanger);
+  color: #fff;
+}
+.h2h .lists .list .score.lose {
+  background-color: map-get($color, colorWarning);
+  color: #fff;
+}
+/* Main Tab End */
+
+/* Soccer List */
+.soccer-list {
+  width: 100%;
+  overflow: hidden;
+  border-right: 1px solid map-get($color, color34);
+  border-left: 1px solid map-get($color, color34);
+}
+.soccer-list .list-head {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: map-get($color, color4);
+  color: map-get($color, color3);
+}
+.app-match-container .soccer-list .list-head {
+  height: 30px;
+  line-height: 30px;
+}
+.soccer-list .list-head * {
+  float: left;
+  font-size: 13px;
+}
+.soccer-list .list-head .icon {
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+  color: #bfbfbf;
+}
+.soccer-list .list-head .name a {
+  color: map-get($color, color3);
+  @include transition(color .2s);
+}
+.soccer-list .list-head .name a:hover {
+  @include color(color, 2)
+}
+.soccer-list .list-head img {
+  width: 24px;
+  display: block;
+  margin: 8px 10px 8px 0;
+}
+.app-match-container .soccer-list .list-head img {
+  width: 22px;
+  margin: 4px 10px 4px 0;
+}
+.soccer-list .list {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  overflow: hidden;
+  border-bottom: 1px solid map-get($color, color34);
+  position: relative;
+  @include transition(color .2s)
+}
+.soccer-list .list .link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 40px;
+  z-index: 5;
+}
+.soccer-list .list:hover > .time,
+.soccer-list .list:hover > .team-home,
+.soccer-list .list:hover > .score,
+.soccer-list .list:hover > .team-away
+{
+  color: map-get($color, color14);
+}
+.soccer-list .list .link:hover ~ .live {
+  color: #fff !important;
+}
+.soccer-list .list div {
+  float: left;
+  border-right: 1px solid map-get($color, color34);
+  font-weight: 500;
+  font-size: 12px;
+}
+.soccer-list .list div:last-child {
+  border-right: none;
+}
+.soccer-list .list .star {
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+  color: #bfbfbf;
+}
+.soccer-list .list .star.active {
+  color: map-get($color, color2) !important;
+}
+.soccer-list .list .time,
+.soccer-list .list .score
+{
+  width: 104px;
+  text-align: center;
+}
+.soccer-list .list .team-home,
+.soccer-list .list .team-away {
+  width: 200px;
+  text-align: center;
+}
+
+/* Footer */
+footer.footer {
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+footer.footer .logo {
+  width: 250px;
+  height: 210px;
+  position: relative;
+  float: left;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+footer.footer .logo a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+footer.footer .inner {
+  width: 846px;
+  float: left;
+  padding-right: 20px;
+}
+footer.footer .inner .text {
+  width: 100%;
+  color: map-get($color, color6);
+  line-height: 20px;
+  font-size: 13px;
+}
+footer.footer .inner .text p {
+  margin-bottom: 20px;
+}
+footer.footer .inner .nav-link {
+  width: 100%;
+}
+footer.footer .inner .nav-link a {
+  color: map-get($color, color16);
+  text-decoration: underline !important;
+  margin-right: 24px;
+  font-size: 13px;
+  text-transform: uppercase;
+  @include transition(color .2s)
+}
+footer.footer .inner .nav-link a:hover {
+  color: map-get($color, color2);
+}
+/* Footer End */
+
+/* Login */
+.login-block {
+  width: 100%;
+  overflow: hidden;
+  padding: 8px;
+  position: relative;
+}
+.login-block figure {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+}
+.login-block figure .img {
+  @include img(0,0,0,0,25px,center);
+  background-color: map-get($color, color17);
+  @include border-radius(5px);
+}
+.login-block .inner {
+  width: 146px;
+  float: left;
+  color: map-get($color, color6);
+}
+.login-block .inner .name {
+  width: 100%;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 20px;
+}
+.login-block .inner .coins {
+  font-size: 14px;
+}
+.login-block .inner .coins span {
+  float: left;
+  font-weight: 500;
+}
+.login-block .inner .coins .icon {
+  width: 17px;
+  height: 17px;
+  background-image: url('../img/coin.svg');
+  -webkit-background-size: 17px;
+  background-size: 17px;
+  background-position: center;
+  display: inline-block;
+  background-repeat: no-repeat;
+  float: left;
+  margin-left: 5px;
+  position: relative;
+  top: -1px;
+}
+.login-block .button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 10px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  color: map-get($color, color3) !important;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+.login-block .profile-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 20;
+  background: transparent !important;
+}
+/* Login End */
+
+/* Category */
+.category-block {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 8px;
+  background: map-get($color, color5);
+  padding: 5px;
+}
+.category-block .list-category {
+  width: 100%;
+  overflow: hidden;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.category-block .list-category .head:hover .name {
+  @include color(color, 3);
+}
+.category-block .list-category .head:hover .icon {
+  @include color(color, 3);
+}
+.category-block .list-category .head {
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+  height: 40px;
+  background: map-get($color, color6);
+  cursor: pointer;
+}
+.category-block .list-category .head .photo {
+  width: 24px;
+  height: 24px;
+  float: left;
+  position: relative;
+  top: -1px;
+}
+.category-block .list-category .head .name {
+  width: 142px;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+  margin-left: 10px;
+  height: 22px;
+  line-height: 22px;
+  font-weight: 500;
+  color: map-get($color, color3);
+  @include transition(color .3s);
+}
+.category-block .list-category .head .icon {
+  float: right;
+  margin-top:5px;
+  @include transition(color .3s);
+}
+.category-block .list-category .sub-category {
+  @include color(bg, 5);
+  width: 100%;
+  overflow: hidden;
+  padding: 10px;
+  display: none;
+}
+.category-block .list-category .sub-category .sub-list {
+  width: 100%;
+  height: 30px;
+  position: relative;
+}
+.category-block .list-category .sub-category .sub-list a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 30px;
+  bottom: 0;
+  z-index: 10;
+  line-height: 30px;
+  color: map-get($color, color3);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+.category-block .list-category .sub-category .sub-list .star {
+  float: right;
+  line-height: 30px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  text-align: right;
+  color: map-get($color, color11);
+}
+.category-block .list-category .sub-category .sub-list .star.active {
+  @include color(color, 2);
+}
+/* Category End */
+
+/* Main Cover */
+.main-cover {
+  width: 100%;
+  height: 300px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px;
+  overflow: hidden;
+  position: relative;
+}
+.main-cover .live-block {
+  width: 100%;
+  text-align: center;
+  margin-top: -30px;
+  margin-bottom: 10px;
+}
+.main-cover .live-block .live {
+  background: transparent !important;
+  font-size: 28px;
+  color: #fff !important;
+  cursor: pointer;
+}
+.main-cover:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,.6);
+}
+.main-cover .list,
+.main-cover .score {
+  float: left;
+  position: relative;
+}
+.main-cover .tournament-head {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 100;
+}
+.main-cover .tournament-head .t-photo {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+.main-cover .tournament-head a {
+  color: #fff;
+  position: relative;
+  top: -6px;
+  margin-left: 10px;
+}
+.main-cover .list {
+  width: 150px;
+  position: relative;
+}
+.main-cover.team-page .list {
+  margin: 0 auto;
+  float: inherit;
+}
+.main-cover .list .link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.main-cover .list figure {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin: 0 auto;
+}
+.main-cover .list figure .img {
+  @include img(0,0,0,0,cover,center)
+}
+.main-cover .list .t-row {
+  width: 100%;
+  text-align: center;
+}
+.main-cover .list .not-found {
+  width: 100%;
+  text-align: center;
+}
+.main-cover .list .not-found .head {
+  font-size: 60px;
+  color: #e2e2e2;
+}
+.main-cover .list .not-found .sub-head {
+  font-size: 50px;
+  color: #BC1D20;
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-weight: 500;
+}
+.main-cover .list .not-found .text {
+  color: #e2e2e2;
+  margin-top: 20px;
+}
+.main-cover .list .t-row .star {
+  display: inline-block;
+  color: #fff;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.main-cover .list .t-row .star.active .icon {
+  color: map-get($color, color2);
+}
+.main-cover .list .name {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: map-get($color, color3);
+  margin-top: 20px;
+  display: inline-block;
+}
+.main-cover .list .name a {
+  color: map-get($color, color3);
+}
+.main-cover .score {
+  width: 260px;
+  overflow: hidden;
+}
+.main-cover .score .top {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.main-cover .score .top span {
+  display: inline-block;
+  max-width: 115px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  font-weight: 500;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0 25px;
+  background-color: rgba(0,0,0,.7);
+  margin-right: 20px;
+  color: map-get($color, color3);
+  @include border-radius(5px)
+}
+.main-cover .score .top span:last-child {
+  margin-right: 0;
+}
+.main-cover .score .date,
+.main-cover .score .text {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: map-get($color, color3);
+}
+.main-cover .score .text {
+  font-weight: 500;
+  margin-top: 10px;
+}
+/* Main Cover End */
+
+/* Match Tab */
+.match-tab {
+  width: 100%;
+  overflow: hidden;
+}
+.match-tab .tab-head {
+  width: 100%;
+  overflow: hidden;
+}
+.match-tab .tab-head .tab-link {
+  float: left;
+  width: 136px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  height: 56px;
+}
+.match-tab .tab-head .tab-link.active {
+  background-color: map-get($color, color2);
+  color: map-get($color, color3);
+}
+.match-tab .tab-head .tab-link .icon {
+  font-size: 18px;
+  font-weight: 500;
+}
+.match-tab .tab-head .tab-link .text {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+.match-tab .tab-content,
+.match-tab .tab-content .tab-block,
+.match-tab .tab-content .tab-block .block,
+.match-tab .tab-content .tab-block .block .head,
+.match-tab .tab-content .tab-block .block .content{
+  width: 100%;
+  overflow: hidden;
+}
+.match-tab .tab-content {
+  padding-bottom: 20px;
+}
+.match-tab .tab-content .tab-block {
+  display: none;
+}
+.match-tab .tab-content .tab-block.active {
+  display: block;
+}
+.match-tab .tab-content .tab-block .block .head {
+  height: 40px;
+  line-height: 40px;
+  background-color: map-get($color, color5);
+  text-align: center;
+  color: map-get($color, color3);
+  font-weight: 500;
+  letter-spacing: .5px;
+  padding: 0 15px;
+}
+.match-tab .tab-content .tab-block .block .content {
+  background-color: map-get($color, color6);
+}
+.match-tab .tab-content .tab-block .block .content .list,
+.match-tab .tab-content .tab-block .block .content .list-progresbar {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  color: map-get($color, color3);
+  padding: 0 25px;
+  border-bottom: 1px solid map-get($color, color5);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+}
+.match-tab .tab-content .tab-block .block .content .list .name span {
+  @include color(color, 24);
+}
+.match-tab .tab-content .tab-block .block .content .list.text-right .time {
+  margin-right: 0 !important;
+}
+.match-tab .tab-content .tab-block .block .content .list.team-away * {
+  float: right;
+}
+.match-tab .tab-content .tab-block .block .match-info-clone {
+  width: 100%;
+  overflow: hidden;
+}
+.match-tab .tab-content .tab-block .block .match-info-clone .l {
+  width: 100%;
+  overflow: hidden;
+  padding: 0 25px;
+  height: 35px;
+  line-height: 35px;
+  color: map-get($color, color3);
+  font-size: 14px;
+}
+.match-tab .tab-content .tab-block .block .match-info-clone .l span {
+  display: block;
+}
+
+.match-tab .tab-content .tab-block .block .content .list:last-child {
+  border-bottom: none;
+}
+.match-tab .tab-content .tab-block .block .content .list .icon {
+  position: relative;
+  top: 2px;
+  margin: 0 5px;
+}
+.match-tab .tab-content .tab-block .block .content .list-progresbar .text {
+  width: 30px;
+  text-align: center;
+}
+.match-tab .tab-content .tab-block .block .content .list-progresbar .progresbar {
+  float: left;
+  width: 540px;
+  line-height: 35px;
+  padding-top: 10px;
+  margin: 0 15px;
+  position: relative;
+}
+.match-tab .tab-content .tab-block .block .content .list-progresbar .progresbar ._1,
+.match-tab .tab-content .tab-block .block .content .list-progresbar .progresbar ._2{
+  width: 100%;
+  height: 15px;
+  display: block;
+  background-color: map-get($color, color33);
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.match-tab .tab-content .tab-block .block .content .list-progresbar .progresbar ._2 {
+  background-color: map-get($color, color2);
+}
+/* Match Tab End */
+
+/* Match Info Tab */
+.match-info-tab,
+.match-info-tab .info-tab-head {
+  width: 100%;
+}
+.match-info-tab .info-tab-head {
+  overflow: hidden;
+  background-color: map-get($color, color6);
+  color: map-get($color, color3);
+}
+.match-info-tab .info-tab-head .link {
+  width: 340px;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  display: block;
+  text-align: center;
+  border-right: 1px solid map-get($color, color6);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.match-info-tab .info-tab-head.table .link {
+  width: 226px;
+}
+.match-info-tab .info-tab-head .link:last-child {
+  border-right: none;
+}
+.match-info-tab .info-tab-head .link.active {
+  background-color: map-get($color, color5);
+  border-bottom: 1px solid map-get($color, color6);
+}
+.match-info-tab .info-tab-content,
+.match-info-tab .info-tab-content .block-list,
+.match-info-tab .info-tab-content .block-list .block-head {
+  width: 100%;
+  overflow: hidden;
+}
+.match-info-tab .info-tab-content {
+  border: 1px solid #c6c6c6;
+}
+.match-info-tab .info-tab-content .block-list {
+  display: none;
+}
+.match-info-tab .info-tab-content .block-list.active {
+  display: block;
+}
+.match-info-tab .info-tab-content .block-list .block-head {
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background-color: map-get($color, color5);
+  color: map-get($color, color3);
+}
+
+.match-info-tab .info-tab-content .block-list .lists {
+  width: 100%;
+  overflow: hidden;
+}
+.match-info-tab .info-tab-content .block-list .lists .list {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  @include color(bg, 6);
+  @include color(color, 3);
+  padding: 0 20px;
+  border-bottom: 1px solid map-get($color, color5);
+  font-size: 14px;
+}
+.match-info-tab .info-tab-content .block-list .lists .list .text span {
+  @include color(color, 3);
+}
+.match-info-tab .info-tab-content .block-list .lists .list .text .icon {
+  margin: 0 5px 0 10px;
+  font-size: 12px;
+}
+
+/* Table Box */
+.table-box,
+.table-box .table-head,
+.table-box .table-content,
+.table-box .table-content .tr {
+  width: 100%;
+  overflow: hidden;
+}
+.table-box .table-head {
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  @include color(bg, 5);
+  @include color(color, 3);
+}
+.table-box .table-header {
+  display: none;
+}
+.table-box .table-content .tr-head {
+  background-color: map-get($color, color2);
+  @include color(color, 3);
+}
+.table-box .table-content .tr-head .tr.groupname {
+  @include color(bg, 5);
+  @include color(color, 3);
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+.table-box .table-content .tr-body {
+  background-color: map-get($color, color3);
+}
+.table-box .table-content .tr-body a {
+  color: #000;
+}
+.table-box .table-content .tr-body .tr:nth-child(odd) {
+  @include color(bg, 12);
+}
+.table-box .table-content .tr .th,
+.table-box .table-content .tr .td {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+}
+.table-box .table-content .tr.active {
+  background-color: map-get($color, color20) !important;
+}
+
+/* Modal Block */
+.modal-block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1200;
+  display: none;
+}
+.modal-block-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgba(0,0,0,.7);
+}
+.modal-block .block-container {
+  width: map-get($grid, modalDefaultW);
+  position: relative;
+  top: 10vh;
+  left: 0;
+  margin: auto;
+  background-color: #fff;
+  z-index: 10;
+}
+.modal-block .block-container .block-head {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-weight: 500;
+  @include color(bg, 2);
+  @include border-radius-separate(3px,3px,0,0);
+}
+.modal-block .block-container .block-head h3 {
+  float: left;
+  height: 45px;
+  line-height: 45px;
+}
+.modal-block .block-container .block-head .icon {
+  float: right;
+  font-size: 14px;
+  cursor: pointer;
+  @include color(color, 6);
+  margin-right: 15px;
+}
+.modal-block .block-container .block-content {
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid map-get($color, color8);
+}
+/* Modal Block End */
+
+/* Portal Selection */
+.portal-selection {
+  width: 100%;
+  max-height: 340px;
+  overflow: hidden;
+}
+#portal-selection {
+  padding: 15px 0 0 !important;
+}
+.portal-selection .list {
+  width: 103.5px;
+  border: 1px solid map-get($color, color8);
+  padding: 10px;
+  cursor: pointer;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  @include transition(border .2s)
+}
+.portal-selection .list:hover {
+  border-color: map-get($color, color10);
+}
+.portal-selection .list:nth-child(4n) {
+  margin-right: 0;
+}
+.portal-selection .list figure {
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.portal-selection .list figure .img {
+  @include img(0,0,0,0,contain,center);
+}
+.portal-selection .list .name {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+/* Portal Selection End */
+
+/* Tournament */
+.page-tournament .tab-block {
+  display: none;
+}
+.page-tournament .tab-block.active {
+  display: block;
+}
+.page-tournament .tab-head .icon {
+  float: left;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.page-tournament .tab-head .txt {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.page-tournament .info-tab-head .link {
+  width: 216.5px !important;
+}
+/* Tournament End */
+
+/* Load More */
+.load-more {
+  width: 100%;
+  overflow: hidden;
+}
+.load-more .load-button {
+  width: 200px;
+  height: 35px;
+  margin: 0 auto;
+  line-height: 35px;
+  text-align: center;
+  display: block;
+  background-color: map-get($color, color10);
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* Load More End */
+
+/* Search */
+.search-modal,
+.search-modal .head,
+.search-modal .head .input,
+.search-modal .data-result,
+.search-modal .data-result .result-list,
+.search-modal .data-result .list-content
+{
+  width: 100%;
+  overflow: hidden;
+}
+.search-modal {
+  padding: 20px;
+}
+.search-modal .head .input {
+  position: relative;
+}
+.search-modal .head .input input {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  height: 35px;
+  padding-right: 30px;
+  font-size: 14px;
+}
+.search-modal .head .input .icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+}
+.search-modal .result-head {
+  width: 100%;
+  overflow: hidden;
+  background-color: map-get($color, bgcolor1);
+  color: map-get($color, color35);
+  border: 1px solid map-get($color, bgcolor2);
+  border-bottom: none;
+}
+.search-modal .result-head .tab-link {
+  width: 33.3%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  display: block;
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.search-modal .result-head .tab-link.active {
+  background-color: map-get($color, bgcolor2);
+}
+.search-modal  .data-result {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  max-height: 70vh;
+}
+.search-modal .result-content {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid map-get($color, bgcolor2);
+}
+.search-modal .result-list {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid map-get($color, bgcolor2);
+  position: relative;
+}
+.search-modal .result-list .link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.search-modal .result-list:last-child {
+  border-bottom: none;
+}
+.search-modal .result-list .name {
+  width: 100%;
+  font-size: 13.5px;
+  font-weight: 500;
+  display: block;
+  @include color(color, 11);
+  @include transition(color .2s);
+}
+.search-modal .result-list .name:hover {
+  @include color(color, 14)
+}
+.search-modal .result-list .sub {
+  width: 100%;
+  font-size: 12px;
+  font-style: italic;
+}
+/* Search End */
+
+/* login */
+.login-page {
+  padding-bottom: 15px;
+}
+.login-page, .login-page .cover {
+  width: 100%;
+}
+.login-page .cover {
+  overflow: hidden;
+}
+.login-page .cover figure {
+  width: 100%;
+  height: 225px;
+  position: relative;
+  overflow: hidden;
+}
+.login-page .cover figure .img {
+  @include img(0,0,0,0, cover, contain);
+}
+.login-page .form-block {
+  width: 400px;
+  margin: 0 auto;
+}
+.login-page .form-block .f-element {
+  width: 100%;
+  font-size: 13px;
+}
+.login-page .form-block .f-element input {
+  width: 260px;
+  height: 35px;
+  float: left;
+  border: 1px solid #e0e0e0;
+}
+.login-page .form-block .f-element button {
+  float: right;
+  width: 90px;
+}
+.login-page .intl-tel-input .country-list {
+  width: 260px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.portal-list-block {
+  width: 100%;
+  overflow: hidden;
+  padding: 15px 15px 0;
+}
+.portal-list-block .list {
+  width: 113px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  float: left;
+}
+.portal-list-block .b-head {
+  width: 100%;
+  padding: 10px;
+  background-color: #b5fff1;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.portal-list-block .list:nth-child(4n){
+  margin-right: 0;
+}
+.portal-list-block .list figure {
+  width: 100%;
+  height: 113px;
+  position: relative;
+}
+.portal-list-block .list figure .img {
+  @include img(0,0,0,0,contain,center);
+}
+.portal-list-block .list .name {
+  width: 100%;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 5px 10px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+/* login End */
+
+/* Profile */
+section.profile-page {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+section.profile-page .left {
+  float: left;
+  overflow: hidden;
+}
+section.profile-page .left figure {
+  width: 160px;
+  height: 150px;
+  border: 1px solid #c7c7c7;
+}
+section.profile-page .right {
+  width: 180px;
+  float: right;
+}
+section.profile-page .f-element {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 14px;
+  position: relative;
+}
+section.profile-page .f-element .note-lab {
+  position: absolute;
+  top: 0;
+  right: -136px;
+  width: 120px;
+  background: #ffb6b6;
+  padding: 7px 10px;
+  color: #860a0a;
+  font-weight: 500;
+  font-size: 13px;
+  @include border-radius(3px);
+  display: none;
+}
+section.profile-page .f-element ._redBorder {
+  border: 1px solid #f78a8a;
+}
+section.profile-page .f-element .note-lab:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -18px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #ffb6b6 transparent transparent;
+}
+section.profile-page .f-element input,
+section.profile-page .f-element select {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  padding: 5px;
+  border: 1px solid #c7c7c7;
+  font-size: 13px;
+}
+section.profile-page .f-element button {
+  width: 100% !important;
+  height: 30px;
+  line-height: 30px;
+}
+.upload-images {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.upload-images .img {
+  @include img(0,0,0,0,cover,center);
+  background-size: cover !important;
+}
+.upload-images input[type=file] {
+  display: none;
+}
+.upload-images .upload-button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+/* Profile End */
+
+/* Prediction */
+.prediction-content {
+  width: 300px;
+  margin: 15px auto;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+}
+.prediction-content .pr-head {
+  width: 100%;
+  overflow: hidden;
+}
+.prediction-content .pr-head .check {
+  width: 149px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  display: block;
+  float: left;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
+.prediction-content .pr-head .check.active {
+  background: map-get($color, color2);
+  color: #fff;
+}
+.prediction-content .pr-content {
+  width: 100%;
+  padding: 20px;
+}
+.prediction-content .pr-content .txt {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.prediction-content .pr-content .pr-box {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+  background-color: map-get($color, color12);
+}
+.prediction-content .pr-content .pr-box .pr-list {
+  width: 86px;
+  text-align: center;
+  line-height: 30px;
+  float: left;
+  display: block;
+  cursor: pointer;
+}
+.prediction-content .pr-content .pr-box .pr-list span {
+  display: block;
+  width: 100%;
+}
+.prediction-content .pr-content .pr-box .pr-list .prspan {
+  font-size: 14px;
+  font-weight: 500;
+}
+.prediction-content .pr-content .pr-box .pr-list .num {
+  font-size: 12px;
+}
+.prediction-content .pr-content .pr-box .pr-list.active {
+  background: map-get($color, color2);
+  color: #fff;
+}
+
+.prediction-content .js-match-info-child {
+  display: none;
+}
+.prediction-content .js-match-info-child.active {
+  display: block;
+}
+
+.prediction-content .pr-value {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.prediction-content .pr-value input {
+  width: 100%;
+  height: 32px;
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid #e0e0e0;
+}
+.prediction-content .pr-button {
+  width: 100%;
+  overflow: hidden;
+}
+.prediction-content .pr-button .button {
+  width: 100%;
+  height: 32px;
+  line-height: 32px;
+}
+
+.predict-success {
+  width: 100%;
+  margin: 20px auto 0;
+  background-color: #fff;
+  padding: 15px;
+  position: relative;
+}
+.predict-success .remove {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 20px;
+  color: map-get($color, color26);
+  cursor: pointer;
+}
+.predict-success .success {
+  width: 60px;
+  font-size: 60px;
+  margin: 0 auto;
+  color: map-get($color, color26);
+}
+.predict-success .txt {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 500;
+}
+.predict-success .box {
+  width: 100%;
+  overflow: hidden;
+}
+.predict-success .box .list {
+  width: 89px;
+  float: left;
+  font-size: 13px;
+  text-align: center;
+  padding: 0 5px;
+}
+.predict-success .box .list .l-txt {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.predict-success .box .list .l-bx {
+  padding: 5px;
+  border: 1px solid map-get($color, color26);
+  font-size: 12px;
+  font-weight: 500;
+  width: 100%;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.prediction-container, .prediction-container .list {
+  width: 100%;
+  overflow: hidden;
+}
+.prediction-container {
+  margin-top: 8px;
+  padding: 8px;
+}
+.prediction-container #pr-container {
+  max-height: 246px;
+  width: 100%;
+  overflow: hidden;
+}
+.prediction-container .pr-button {
+  width: 100%;
+  text-align: center;
+  margin-top: 8px
+}
+.prediction-container .pr-button .button {
+  height: 30px;
+  line-height: 30px;
+  font-size: 13px;
+  @include border-radius(5px)
+}
+.prediction-container .n-text {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  color: map-get($color, color6);
+}
+.prediction-container .list {
+  background-color: map-get($color, color4);
+  font-size: 11px;
+  padding: 10px;
+  color: #fff;
+  margin-bottom: 2px;
+  position: relative;
+  text-transform: uppercase;
+}
+.prediction-container .list .link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+.prediction-container .list .team {
+  width: 147px;
+  float: left;
+  margin-bottom: 8px;
+}
+.prediction-container .list .team:last-child {
+  margin-bottom: 0;
+}
+.prediction-container .list .team .photo {
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-right: 10px;
+}
+.prediction-container .list .team .name,
+.prediction-container .list .team .score
+{
+  float: left;
+  height: 16px;
+  line-height: 16px;
+}
+.prediction-container .list .team .name {
+  width: 120px;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.prediction-container .list .team .score {
+  float: right;
+}
+.prediction-container .list .result {
+  width: 35px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+}
+.prediction-container .list .result span {
+  width: 100%;
+  display: block;
+  margin-bottom: 2px;
+}
+/* Prediction End */
+
+/* Notfication */
+.notfication-modal {
+  width: 100%;
+  padding: 30px;
+}
+.notfication-modal .head {
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.notfication-modal .text {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+.notfication-modal .n-button {
+  text-align: right;
+  width: 100%;
+}
+/* Notfication End */
+
+.prediction-page {
+  width: 100%;
+  padding: 15px;
+}
+.prediction-page .page-head {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 15px;
+}
+.prediction-page .page-head .tab-span {
+  width: 216px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  display: block;
+  float: left;
+  cursor: pointer;
+}
+.prediction-page .page-head .tab-span.active {
+  background: map-get($color, color2);
+  color: #fff;
+}
+.prediction-page .tab-block {
+  display: none;
+}
+.prediction-page .tab-block.active {
+  display: block;
+}
+.pr-match-list {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #c6c6c6;
+  border-bottom: none;
+  position: relative;
+}
+.pr-match-list:last-child {
+  border-bottom: 1px solid #c6c6c6;
+}
+.pr-match-list:hover *{
+  color: map-get($color, color14);
+}
+.pr-match-list .link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 38px;
+  bottom: 0;
+  z-index: 10;
+}
+.pr-match-list div {
+  float: left;
+  font-size: 13px;
+  border-right: 1px solid #c6c6c6;
+  font-weight: 500;
+}
+.pr-match-list div:last-child {
+  border-right: none;
+}
+.pr-match-list .status {
+  width: 60px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+.pr-match-list .score {
+  width: 60px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.pr-match-list .team {
+  width: 215px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.pr-match-list .predict {
+  width: 120px;
+  text-align: center;
+  font-size: 11px;
+  height: 50px;
+  padding: 2px 0;
+}
+.pr-match-list .predict p {
+  padding: 2px 0;
+}
+.pr-match-list .remove {
+  width: 38px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+.pr-match-list .remove:hover {
+  color: map-get($color, color14);
+}
+
+/* News Block */
+.news-block {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 8px;
+}
+.news-block figure {
+  width: 100%;
+  height: 169px;
+  position: relative;
+  @include border-radius(5px);
+  overflow: hidden;
+}
+.news-block figure .link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+.news-block figure .img {
+  @include img(0,0,0,0,cover,center);
+}
+.news-page {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+}
+.news-page .news-list {
+  width: 200px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+}
+.news-page .news-list .status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 25px;
+  line-height: 25px;
+  background-color: #ff2933;
+  z-index: 11;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 0 15px;
+  color: #fff;
+  font-weight: 500;
+}
+.news-page .news-list:nth-child(3n) {
+  margin-right: 0;
+}
+.news-page .news-list .date {
+  width: 100%;
+  font-size: 12px;
+  padding: 0 10px 10px;
+  color: map-get($color, color2);
+  font-weight: 500;
+}
+.news-page .news-list .date .icon {
+  font-size: 10px;
+  margin-right: 2px;
+}
+.news-page .news-list .link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+.news-page .news-list figure {
+  width: 100%;
+  height: 160px;
+  position: relative;
+}
+.news-page .news-list figure .bg-cover {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(180deg, rgba(16, 11, 8, .2), rgba(16, 11, 8, .8));
+  z-index: 5;
+}
+.news-page .news-list figure .play-icon {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  background-image: url('../img/play-button.svg');
+  -webkit-background-size: 30px;
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+.news-page .news-list figure .img {
+  @include img(0,0,0,0,cover,center);
+  background-color: #000;
+}
+.news-page .news-list .name {
+  width: 100%;
+  text-align: left;
+  line-height: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px;
+  height: 60px;
+}
+.news-page-view {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+  background: #fff;
+}
+.news-page-view figure {
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+.news-page-view figure .img {
+  @include img(0,0,0,0,cover,center);
+}
+.news-page-view .title {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+.news-page-view .content {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.news-page-view .video {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  background: #000;
+}
+.news-page-view .video video {
+  width: 100%;
+  height: 100%;
+}
+/* News Block End */
+
+/* Match Live View */
+.match-live-view {
+  width: 100%;
+  height: 405px;
+  position: relative;
+  display: none;
+}
+.match-live-view .live-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 10;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 12px;
+  background: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #000;
+}
+.match-live-view iframe {
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  position: relative;
+}
+/* Match Live View End */
+
+/* Restrict To Login */
+.__restrict_to_login {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+}
+.__restrict_to_login .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.__restrict_to_login .cover figure {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.__restrict_to_login .cover figure .img {
+  @include img(0,0,0,0,cover,center);
+}
+.__restrict_to_login .text {
+  width: 300px;
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  margin: auto;
+  background: rgba(255,255,255,.85);
+  padding: 10px;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+  @include border-radius(.3vw);
+
+}
+.__restrict_to_login .text .h {
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 17px;
+}
+.__restrict_to_login .text .button {
+  padding: 0 40px;
+  color: map-get($color,color3) !important;
+  font-weight: 500;
+  font-size: 14px;
+  margin-top: 20px;
+}

@@ -1,0 +1,148 @@
+<div class="main-content main-tab page-tournament js-tab-parent">
+
+    <div id="app-result-content" class="display-none">
+        <div class="tab-head bg-gradient5 mb-15">
+        <span class="tab-link tab-span js-tab-child active ">
+            <i class="icon icon-calendar2"></i>
+            <span class="txt" data-lang="txtResults"></span>
+        </span>
+            <span class="tab-link tab-span app-table-tab js-tab-child display-none">
+            <i class="icon icon-calendar3"></i>
+            <span class="txt" data-lang="txtTable"></span>
+        </span>
+        </div>
+
+        <div class="app-match-container">
+
+            <div class="clone-block display-none" id="clone-block">
+                <div class="tab-content-head mt-0">
+                    <div class="date">&nbsp;</div>
+                </div>
+
+                <div class="">
+
+                    <div class="soccer-list">
+
+                        <div class="app-list-container __match_list-container">
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="list js-element display-none __match_list_block" id="match-element">
+                <a href="#" class="link js-match-link"></a>
+                <div class="star js-favorite" data-terms="1" data-type="match">
+                    <i class="icon icon-star"></i>
+                </div>
+                <div class="time __t-time">&nbsp;</div>
+                <div class="team-home">&nbsp;</div>
+                <div class="score">
+                    <span class="home __home-num">&nbsp;</span>
+                    <span>-</span>
+                    <span class="away __away-num">&nbsp;</span>
+                </div>
+                <div class="team-away">&nbsp;</div>
+            </div>
+
+            <div class="tab-block-clone mb-10 radius-5 overflow-hidden">
+
+                <div class="soccer-list match-list-content">
+                    <div class="list-head js-element app-page-head">
+                        <div class="favorite-head">
+                            <div class="star js-favorite" data-terms="1" data-type="tournament">
+                                <i class="icon icon-star"></i>
+                            </div>
+                        </div>
+                        <img class="photo" src="">
+                        <div class="name"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="active tab-content tab-block">
+                <div class="app-page-container js-load-more-content">
+
+                </div>
+                <div class="load-more mt-20">
+                    <span class="load-button js-load-more radius-5" data-type="tournament"
+                          data-page="1" data-lang="txtLoadmore"></span>
+                </div>
+            </div>
+
+            <!-- Tab Table -->
+            <div class="tab-block app-match-table display-none">
+
+                <div class="match-info-tab js-match-info-tab">
+                    <div class="info-tab-head table">
+                        <span class="js-match-info-link link active" data-lang="txtOverall"></span>
+                        <span class="js-match-info-link link" data-lang="txtHome"></span>
+                        <span class="js-match-info-link link" data-lang="txtAway"></span>
+                    </div>
+
+                    <div class="table-clone display-none" id="table-content">
+                        <div class="table-box app-match-table-content">
+                            <div class="table-head table-header">&nbsp;</div>
+                            <div class="table-content">
+                                <div class="tr-head">
+                                    <div class="tr groupname"></div>
+                                    <div class="tr">
+                                        <div class="th col-50">#</div>
+                                        <div class="th col-280 text-left" data-lang="txtTeam"></div>
+                                        <div class="th col-50">C</div>
+                                        <div class="th col-50">W</div>
+                                        <div class="th col-50">D</div>
+                                        <div class="th col-50">L</div>
+                                        <div class="th col-70">G</div>
+                                        <div class="th col-50">P</div>
+                                    </div>
+                                </div>
+
+                                <div class="tr-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tr display-none" id="table-list">
+                        <div class="td col-50 position">&nbsp;</div>
+                        <div class="td col-280 text-left"><a href="" class="team-name">&nbsp;</a></div>
+                        <div class="td col-50 gameCount">&nbsp;</div>
+                        <div class="td col-50 win">&nbsp;</div>
+                        <div class="td col-50 draw">&nbsp;</div>
+                        <div class="td col-50 lose">&nbsp;</div>
+                        <div class="td col-70"><span class="goalScored mr-5">&nbsp;</span> <span
+                                class="goalAgainst ml-5">&nbsp;</span></div>
+                        <div class="td col-50 point">&nbsp;</div>
+                    </div>
+
+                    <div class="info-tab-content border-none app-match-table-container">
+
+                        <!-- Overall -->
+                        <div class="block-list app-match-table-overall js-match-info-child active"></div>
+                        <!-- Overall End -->
+
+                        <!-- Home -->
+                        <div class="block-list app-match-table-home js-match-info-child"></div>
+                        <!-- Home End -->
+
+                        <!-- Away -->
+                        <div class="block-list app-match-table-away js-match-info-child"></div>
+                        <!-- Away End -->
+
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- Tab Table End -->
+
+        </div>
+    </div>
+    <div class="no-data mt-0 display-none" id="app-error" data-lang="txtNotPage404"></div>
+</div>

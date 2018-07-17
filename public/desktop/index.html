@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="300"/>
+    <meta name="apple-web-app-capable" content="yes">
+    <meta name="apple-web-app-status-bar-style" content="black">
+
+
+
+    <!-- Include CSS -->
+    <link rel="stylesheet" href="/style/path/css/style.css?v1.0.6">
+    <link rel="icon" href="/style/path/img/favicon.ico">
+    <title>ZuniSport</title>
+</head>
+<body class="bg-gradient2">
+
+
+<!-- Container -->
+<main id="container">
+
+    <!-- Header -->
+    <header class="header" style="background-image: url('/style/path/img/header-soccer-bg.jpg');">
+        <!--Logo-->
+        <div class="logo">
+            <div class="soccer-span" style="background-image: url('/style/path/img/soccer.png');"></div>
+            <a href="/" data-load="true" style="background-image: url('/style/path/img/logo.svg');"></a>
+        </div>
+        <!--Logo End-->
+
+        <!-- Langauge -->
+        <div class="language display-none" id="lang-container">
+            <div class="form-block">
+                <div class="form-selectbox">
+                    <div class="select js-language-block js-parent">
+                        <div class="default plr-15 radius-3 border-1-color10 bg-color9 js-button" data-terms="open">
+                            <span class="text" data-value=""> </span>
+                            <i class="icon icon-arrow-bottom"></i>
+                        </div>
+                        <div class="scrollContent options radius-3 js-child">
+                            <div class="sc-content js-laguage">
+                                <span class="option js-language-event" data-value=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Langauge End -->
+    </header>
+    <!-- Header End -->
+
+    <div class="container-block">
+        <!-- Aside Left -->
+        <aside class="left">
+
+            <!-- Current Time -->
+            <div class="round-block display-none mb-8" data-dom="current_time">
+                <div class="head bg-gradient1 radius-5 clr-color3"><i class="icon icon-clock"></i> <span data-lang="currentTime"></span></div>
+                <div class="block-content layer radius-5 ptb-10">
+                    <div class="content-text" id="current-today-time"></div>
+                    <div class="form-block">
+                        <div class="form-selectbox" id="currentSelection">
+                            <div class="select js-parent">
+                                <div class="default radius-3 js-button" data-terms="open">
+                                    <span class="text et-current-default" data-value="">&nbsp;</span>
+                                    <i class="icon icon-arrow-bottom"></i>
+                                </div>
+                                <div class="options scrollContent radius-3 bg-color6 js-child">
+                                    <span class="option display-none" id="app-current-time-option" data-value="">
+                                        <span class="tmzone"></span>
+                                        <span class="time"></span>
+                                    </span>
+                                    <div class="sc-content js-current-time" id="app-current-time-block"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <!-- Current Time End -->
+
+            <!-- News Block -->
+            <div class="news-block display-none" id="news-block">
+                <figure>
+                    <a class="link js-login-modal" id="contentsLink"></a>
+                    <div class="img" style="background-image: url('/style/path/img/news.jpg');"></div>
+                </figure>
+            </div>
+            <!-- News Block End -->
+
+            <!-- My Tournaments -->
+            <div class="round-block mt-0">
+                <div class="head bg-gradient3 radius-5">
+                    <i class="icon icon-star"></i>
+                    <span data-lang="myTournamentsHead"></span>
+                </div>
+                <div class="block-content radius-5 ptb-10 display-none" id="no-tournament" data-lang="myTournamentsText"></div>
+                <div class="round-content-block radius-3 js-element display-none" id="app-round-tournament">
+
+                </div>
+
+                <div class="list radius-3 display-none" id="app-round-list">
+                    <a href="#" class="link"></a>
+                    <img src="https://api.zuniac.com/category/logo/en.png" class="photo">
+                    <div class="name">&nbsp;</div>
+                    <div class="star js-favorite">
+                        <div class="icon icon-cancel"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- My Tournaments End -->
+
+            <!-- My Teams -->
+            <div class="round-block mt-8">
+                <div class="head bg-gradient3 radius-5"><i class="icon icon-star"></i> <span data-lang="myTeamsHead"></span>
+                </div>
+                <div class="block-content radius-5 ptb-10 display-none" id="no-team" data-lang="myTeamsText"></div>
+
+                <div class="round-content-block radius-3 js-element display-none" id="app-round-team">
+
+                </div>
+            </div>
+            <!-- My Teams End -->
+
+        </aside>
+        <!-- Aside Left End -->
+
+        <!-- Section Main -->
+        <section class="main">
+
+            <!-- Navbar -->
+            <nav class="navbar-block bg-gradient4">
+                <div class="content">
+                    <a href="#" data-route="" class="link"><i class=""></i> <span></span></a>
+                </div>
+                <a class="link search-button js-search-modal"><i class="icon icon-search"></i></a>
+            </nav>
+            <!-- Navbar End -->
+
+            <!-- App Container Block -->
+            <div id="app-container"></div>
+            <!-- App Container Block -->
+
+        </section>
+        <!-- Section Main End -->
+
+        <!-- Aside Right -->
+        <aside class="right">
+
+            <!-- Login Block -->
+            <div class="login-block bg-gradient3 radius-5" id="app-login-block">
+                <figure>
+                    <div class="img user-photo"></div>
+                </figure>
+                <div class="inner">
+                    <div class="name">&nbsp;</div>
+                    <div class="coins"><span class="__user-coins">&nbsp;</span> <b class="icon"></b></div>
+                </div>
+                <a class="button bg-gradient4 radius-5 js-login-modal display-none" id="login-button">&nbsp;</a>
+            </div>
+            <!-- Login Block End -->
+
+            <!-- Predictions -->
+            <div class="round-block mt-8">
+                <div class="head bg-gradient3 radius-5 text-left pl-15"><i class="icon icon-star"></i>
+                    <span data-lang="predictionsHead"></span>
+                </div>
+                <div class="list radius-5 display-none" id="pr-list">
+                    <a href="#" class="link"></a>
+                    <div class="team home">
+                        <img src="" class="photo">
+                        <div class="name"></div>
+                    </div>
+                    <div class="team away mb-0">
+                        <img src="" class="photo">
+                        <div class="name"></div>
+                    </div>
+                    <div class="result">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="prediction-container bg-gradient3 radius-5 display-none">
+                    <div id="pr-container"></div>
+                    <div class="clearfix"></div>
+                    <div class="pr-button">
+                        <a href="" class="button button-success" id="pr-page-link" data-lang="txtPrPageLink"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Predictions End -->
+
+            <!-- Category -->
+            <div class="list-category display-none dropdown-block" id="app-category-list">
+                <div class="head radius-5 dropdown-link" data-terms="open">
+                    <img src="" class="photo">
+                    <div class="name"></div>
+                    <div class="icon icon-arrow-right"></div>
+                </div>
+                <div class="sub-category dropdown-content">
+
+                </div>
+            </div>
+            <div class="sub-list js-element display-none" id="app-category-sub-list">
+                <a href="#" class="sub-link"></a>
+                <div class="favorite-head">
+                    <div class="star js-favorite" data-terms="1" data-type="tournament"><i class="icon icon-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="category-block radius-5" id="categoryBlock"></div>
+            <!-- Category End -->
+
+        </aside>
+        <!-- Aside Right End -->
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="top">
+            <div class="logo">
+                <a href="#" data-route="" style="background-image: url('/style/path/img/logo.svg');"></a>
+            </div>
+            <div class="inner">
+                <div class="text">
+                    <div data-lang="footerText">
+
+                    </div>
+                    <p>Copyright &copy; 2018 personalscores.zunisport.com | All Rights Reserved.</p>
+                </div>
+                <!--<div class="nav-link">-->
+                <!--<a href="#" data-route="">Soccer</a>-->
+                <!--<a href="#" data-route="">Basketball</a>-->
+                <!--<a href="#" data-route="">Ice Hockey</a>-->
+                <!--<a href="#" data-route="">Tenis</a>-->
+                <!--</div>-->
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Loading Gif -->
+    <div class="loading-gif">
+        <div class="gif radius-5" style="background-image: url(/style/path/img/loading.svg);"></div>
+    </div>
+    <!-- Loading Gif End -->
+
+    <!-- Modal -->
+    <div class="modal-block js-modal-block">
+        <div class="modal-block-cover"></div>
+        <div class="block-container radius-5 modal-contaie">
+            <div class="block-head">
+                <span class="icon icon-cancel"></span>
+            </div>
+            <div class="block-content"></div>
+        </div>
+    </div>
+    <!-- Modal End -->
+
+    <div id="body-cover"></div>
+
+    <div class="bg-cover"></div>
+
+</main>
+<!-- Container End -->
+
+
+<!-- Include JS -->
+<script src="/plugin/plugin.Device.js?v1.0.6"></script>
+<script src="/plugin/plugin.Lodash.js?v1.0.6"></script>
+<script src="/style/path/js/jquery-3.3.1.min.js?v1.0.6"></script>
+<script src="/style/path/js/popper.min.js?v1.0.6"></script>
+<script src="/style/path/js/bootstrap.min.js?v1.0.6"></script>
+<script src="/style/path/js/scrollbar.min.js?v1.0.6"></script>
+<script src="/style/path/js/jquery-ui.js?v1.0.6"></script>
+<script src="/style/path/js/jquery.touch.min.js?v1.0.6"></script>
+<script src="/style/path/js/intlTelInput.min.js?v1.0.6"></script>
+<script src="/style/path/js/moment.min.js?v1.0.6"></script>
+<script src="/path/app/api.js?v1.0.6"></script>
+<script src="/path/app/language.js?v1.0.6"></script>
+<script src="/path/helper/helper.js?v1.0.6"></script>
+<script src="/path/app/request.js?v1.0.6"></script>
+<script src="/path/app/methods.js?v1.0.6"></script>
+<script src="/path/app/controller.js?v1.0.6"></script>
+<script src="/path/app/route.js?v1.0.6"></script>
+<script src="/path/app/events.js?v1.0.6"></script>
+<script src="/path/app/responseHandler.js?v1.0.6"></script>
+<script src="/path/app/init.js?v1.0.6"></script>
+<script src="/style/path/js/events.js?v1.0.6"></script>
+<script src="/style/path/js/listeners.js?v1.0.6"></script>
+</body>
+</html>

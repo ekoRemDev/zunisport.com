@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="41cde797-e04f-4ddd-b020-d511e8390226" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileColors">
+    <fileColor scope="Non-Project Files (Material Oceanic)" color="2E3C43" />
+    <fileColor scope="Non-Project Files (Material Darker)" color="323232" />
+    <fileColor scope="Non-Project Files (Material Lighter)" color="eae8e8" />
+    <fileColor scope="Non-Project Files (Material Palenight)" color="2f2e43" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>loginm</find>
+      <find>live</find>
+      <find>LiveMinute</find>
+      <find>desktop</find>
+      <find>/match/live/</find>
+      <find>setInter</find>
+      <find>DesktopLi</find>
+      <find>list-container</find>
+      <find>Live</find>
+      <find>LiveMatch</find>
+      <find>sort</find>
+      <find>js-predition-button</find>
+      <find>js-load-more</find>
+      <find>tournament:</find>
+      <find>desktopli</find>
+      <find>loadmo</find>
+      <find>MatchDetail</find>
+      <find>.h2h .lists .list .score</find>
+      <find>loadM</find>
+      <find>desktopL</find>
+      <find>setIn</find>
+      <find>loadMo</find>
+      <find>livema</find>
+      <find>scorerPlayerName</find>
+      <find>footballer</find>
+      <find>msisdn.replace</find>
+      <find>js-login-modal</find>
+      <find>RequestData</find>
+      <find>RequestData.Portals</find>
+      <find>js-match-link</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>E:\_Server\htdocs\Z\zunisport.com1\public\_assets</dir>
+      <dir>E:\_Server\htdocs\Z\zunisport.com1\app</dir>
+      <dir>E:\_Server\htdocs\Z\zunisport.com1</dir>
+      <dir>E:\_Server\htdocs\Z\zunisport.com</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/public/_assets/scss/form.scss" />
+        <option value="$PROJECT_DIR$/public/_assets/scss/_default.scss" />
+        <option value="$PROJECT_DIR$/public/_assets/scss/_objects.scss" />
+        <option value="$PROJECT_DIR$/app/js/app/request.js" />
+        <option value="$PROJECT_DIR$/public/desktop/page/default/profile.html" />
+        <option value="$PROJECT_DIR$/public/mobile/page/default/profile.html" />
+        <option value="$PROJECT_DIR$/public/desktop/_parts/searchModal.html" />
+        <option value="$PROJECT_DIR$/public/_assets/js/events.js" />
+        <option value="$PROJECT_DIR$/public/_assets/scss/_desktop.scss" />
+        <option value="$PROJECT_DIR$/public/_assets/scss/_mobile.scss" />
+        <option value="$PROJECT_DIR$/public/mobile/page/soccer/match.html" />
+        <option value="$PROJECT_DIR$/public/desktop/page/soccer/match.html" />
+        <option value="$PROJECT_DIR$/public/mobile/page/soccer/team.html" />
+        <option value="$PROJECT_DIR$/public/desktop/page/soccer/team.html" />
+        <option value="$PROJECT_DIR$/public/desktop/index.html" />
+        <option value="$PROJECT_DIR$/public/mobile/index.html" />
+        <option value="$PROJECT_DIR$/app/js/helper/helper.js" />
+        <option value="$PROJECT_DIR$/app/js/app/responseHandler.js" />
+        <option value="$PROJECT_DIR$/app/js/app/language.js" />
+        <option value="$PROJECT_DIR$/app/js/app/init.js" />
+        <option value="$PROJECT_DIR$/app/js/app/methods.js" />
+        <option value="$PROJECT_DIR$/public/desktop/page/soccer/tournament.html" />
+        <option value="$PROJECT_DIR$/public/mobile/page/soccer/home.html" />
+        <option value="$PROJECT_DIR$/public/mobile/page/soccer/tournament.html" />
+        <option value="$PROJECT_DIR$/public/mobile/page/soccer/favorite.html" />
+        <option value="$PROJECT_DIR$/public/desktop/page/soccer/home.html" />
+        <option value="$PROJECT_DIR$/app/js/app/events.js" />
+        <option value="$PROJECT_DIR$/public/_assets/js/listeners.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="zunisport.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zunisport.com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zunisport.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zunisport.com" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zunisport.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zunisport.com" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zunisport.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zunisport.com" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zunisport.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zunisport.com" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zunisport.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zunisport.com" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zunisport.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zunisport.com" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zunisport.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zunisport.com" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="desktop" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="soccer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zunisport.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zunisport.com" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zunisport.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zunisport.com" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zunisport.com" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zunisport.com" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="mobile" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+              <item name="soccer" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../G/gts.com" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.By Scope" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/app/js/app/events2.js" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41cde797-e04f-4ddd-b020-d511e8390226" name="Default" comment="" />
+      <created>1525415927905</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1525415927905</updated>
+      <workItem from="1525415929198" duration="9477000" />
+      <workItem from="1526545880069" duration="2775000" />
+      <workItem from="1526882999213" duration="1263000" />
+      <workItem from="1526888514196" duration="636000" />
+      <workItem from="1526984460605" duration="85000" />
+      <workItem from="1527582400637" duration="944000" />
+      <workItem from="1528354274444" duration="159000" />
+      <workItem from="1528354558203" duration="1328000" />
+      <workItem from="1528356591774" duration="13000" />
+      <workItem from="1528700716575" duration="8098000" />
+      <workItem from="1528751908457" duration="1743000" />
+      <workItem from="1528778858171" duration="3236000" />
+      <workItem from="1528787544610" duration="10876000" />
+      <workItem from="1528807812843" duration="3014000" />
+      <workItem from="1528866978513" duration="10000" />
+      <workItem from="1528872896268" duration="556000" />
+      <workItem from="1528956172019" duration="1706000" />
+      <workItem from="1529492078041" duration="10502000" />
+      <workItem from="1529563594926" duration="56000" />
+      <workItem from="1529575269822" duration="37000" />
+      <workItem from="1529589317411" duration="1938000" />
+      <workItem from="1529645967013" duration="84000" />
+      <workItem from="1529666740102" duration="5904000" />
+      <workItem from="1530510080465" duration="90000" />
+      <workItem from="1530510186604" duration="1784000" />
+      <workItem from="1530513269422" duration="1718000" />
+      <workItem from="1530520901465" duration="8379000" />
+      <workItem from="1530534814052" duration="618000" />
+      <workItem from="1530685823205" duration="5287000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="82316000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15848215" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3280142" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/js/app/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2349">
+          <caret line="85" column="31" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2378">
+          <caret line="86" column="15" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app/responseHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2349">
+          <caret line="1269" column="48" selection-start-line="1269" selection-start-column="48" selection-end-line="1269" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_assets/scss/_mobile.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30885">
+          <caret line="1065" column="21" selection-start-line="1065" selection-start-column="21" selection-end-line="1065" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_assets/scss/_objects.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1392">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1566">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_assets/scss/_desktop.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11484">
+          <caret line="396" column="23" selection-start-line="396" selection-start-column="23" selection-end-line="396" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app/events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3422">
+          <caret line="1590" column="4" selection-start-line="1590" selection-start-column="4" selection-end-line="1590" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2349">
+          <caret line="85" column="31" lean-forward="true" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2378">
+          <caret line="86" column="15" lean-forward="true" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1566">
+          <caret line="58" column="19" selection-start-line="58" selection-start-column="19" selection-end-line="58" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app/responseHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2523">
+          <caret line="1279" column="12" selection-start-line="1279" selection-start-column="15" selection-end-line="1286" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_assets/scss/_objects.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1943">
+          <caret line="67" column="26" selection-start-line="67" selection-start-column="26" selection-end-line="67" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_assets/scss/form.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_assets/scss/_default.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6235">
+          <caret line="215" column="25" selection-start-line="215" selection-start-column="25" selection-end-line="215" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_assets/scss/_desktop.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1653">
+          <caret line="57" column="33" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app/responseHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11252">
+          <caret line="392" column="31" selection-start-line="392" selection-start-column="31" selection-end-line="392" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_assets/scss/_loops.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_assets/scss/_mobile.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29899">
+          <caret line="1031" column="43" selection-start-line="1031" selection-start-column="43" selection-end-line="1031" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_assets/scss/form.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_assets/scss/_loops.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/desktop/page/default/content.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/mobile/page/default/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_assets/js/events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="202" column="64" selection-start-line="202" selection-start-column="64" selection-end-line="202" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/desktop/_parts/searchModal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="67" selection-start-line="3" selection-start-column="67" selection-end-line="3" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/desktop/page/default/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_assets/scss/_objects.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="14" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_assets/scss/_desktop.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13014">
+          <caret line="482" column="2" selection-start-line="482" selection-start-column="2" selection-end-line="483" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_assets/scss/_mobile.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27528">
+          <caret line="1147" column="22" selection-start-line="1147" selection-start-column="22" selection-end-line="1147" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/mobile/page/soccer/match.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10464">
+          <caret line="436" column="53" selection-start-line="436" selection-start-column="53" selection-end-line="436" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/desktop/page/soccer/match.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11136">
+          <caret line="464" column="71" lean-forward="true" selection-start-line="464" selection-start-column="71" selection-end-line="464" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/mobile/page/soccer/team.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="37" column="42" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/desktop/page/soccer/team.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="30" column="40" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/desktop/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7008">
+          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+          <caret line="271" column="44" selection-start-line="271" selection-start-column="44" selection-end-line="271" selection-end-column="44" />
+          <caret line="272" column="44" selection-start-line="272" selection-start-column="44" selection-end-line="272" selection-end-column="44" />
+          <caret line="273" column="54" selection-start-line="273" selection-start-column="54" selection-end-line="273" selection-end-column="54" />
+          <caret line="274" column="48" selection-start-line="274" selection-start-column="48" selection-end-line="274" selection-end-column="48" />
+          <caret line="275" column="51" selection-start-line="275" selection-start-column="51" selection-end-line="275" selection-end-column="51" />
+          <caret line="276" column="51" selection-start-line="276" selection-start-column="51" selection-end-line="276" selection-end-column="51" />
+          <caret line="277" column="47" selection-start-line="277" selection-start-column="47" selection-end-line="277" selection-end-column="47" />
+          <caret line="278" column="54" selection-start-line="278" selection-start-column="54" selection-end-line="278" selection-end-column="54" />
+          <caret line="279" column="54" selection-start-line="279" selection-start-column="54" selection-end-line="279" selection-end-column="54" />
+          <caret line="280" column="44" selection-start-line="280" selection-start-column="44" selection-end-line="280" selection-end-column="44" />
+          <caret line="281" column="36" selection-start-line="281" selection-start-column="36" selection-end-line="281" selection-end-column="36" />
+          <caret line="282" column="41" selection-start-line="282" selection-start-column="41" selection-end-line="282" selection-end-column="41" />
+          <caret line="283" column="42" selection-start-line="283" selection-start-column="42" selection-end-line="283" selection-end-column="42" />
+          <caret line="284" column="40" selection-start-line="284" selection-start-column="40" selection-end-line="284" selection-end-column="40" />
+          <caret line="285" column="40" selection-start-line="285" selection-start-column="40" selection-end-line="285" selection-end-column="40" />
+          <caret line="286" column="43" selection-start-line="286" selection-start-column="43" selection-end-line="286" selection-end-column="43" />
+          <caret line="287" column="38" selection-start-line="287" selection-start-column="38" selection-end-line="287" selection-end-column="38" />
+          <caret line="288" column="39" selection-start-line="288" selection-start-column="39" selection-end-line="288" selection-end-column="39" />
+          <caret line="289" column="48" selection-start-line="289" selection-start-column="48" selection-end-line="289" selection-end-column="48" />
+          <caret line="290" column="37" selection-start-line="290" selection-start-column="37" selection-end-line="290" selection-end-column="37" />
+          <caret line="291" column="44" selection-start-line="291" selection-start-column="44" selection-end-line="291" selection-end-column="44" />
+          <caret line="292" column="47" selection-start-line="292" selection-start-column="47" selection-end-line="292" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/mobile/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="162" column="55" lean-forward="true" selection-start-line="162" selection-start-column="55" selection-end-line="162" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/helper/helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="318" column="39" selection-start-line="318" selection-start-column="39" selection-end-line="318" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_assets/scss/_default.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="218" column="17" selection-start-line="218" selection-start-column="17" selection-end-line="218" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="69" column="11" selection-start-line="69" selection-start-column="4" selection-end-line="69" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app/language.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="331" selection-start-line="331" selection-end-line="331" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="192" selection-start-line="192" selection-end-line="192" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/desktop/page/soccer/tournament.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="35" column="59" lean-forward="true" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/mobile/page/soccer/tournament.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/mobile/page/soccer/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/mobile/page/soccer/favorite.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/desktop/page/soccer/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="87" column="42" lean-forward="true" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app/responseHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="191" column="27" selection-start-line="191" selection-start-column="27" selection-end-line="191" selection-end-column="27" />
+          <folding>
+            <element signature="e#123#145#0" />
+            <element signature="e#172#2090#0" />
+            <element signature="e#182#206#0" />
+            <element signature="e#583#1308#0" />
+            <element signature="e#703#1045#0" />
+            <element signature="e#1060#1088#0" />
+            <element signature="e#1348#2083#0" />
+            <element signature="e#1560#1954#0" />
+            <element signature="e#2096#2122#0" />
+            <element signature="e#2128#2152#0" />
+            <element signature="e#2180#3323#0" />
+            <element signature="e#2425#3316#0" />
+            <element signature="e#2460#3305#0" />
+            <element signature="e#2495#2602#0" />
+            <element signature="e#2625#2738#0" />
+            <element signature="e#2761#2874#0" />
+            <element signature="e#2897#3006#0" />
+            <element signature="e#3139#3232#0" />
+            <element signature="e#3329#3357#0" />
+            <element signature="e#3363#3382#0" />
+            <element signature="e#3413#5071#0" />
+            <element signature="e#3424#3449#0" />
+            <element signature="e#3838#5063#0" />
+            <element signature="e#3979#4574#0" />
+            <element signature="e#4135#4145#0" />
+            <element signature="e#4316#4327#0" />
+            <element signature="e#5077#5100#0" />
+            <element signature="e#5106#5132#0" />
+            <element signature="e#5169#6389#0" />
+            <element signature="e#5536#6380#0" />
+            <element signature="e#5664#6036#0" />
+            <element signature="e#6395#6425#0" />
+            <element signature="e#6431#6447#0" />
+            <element signature="e#7320#7339#0" />
+            <element signature="e#7372#7735#0" />
+            <element signature="e#7746#7769#0" />
+            <element signature="e#7779#7803#0" />
+            <element signature="e#7836#8214#0" />
+            <element signature="e#8225#8253#0" />
+            <element signature="e#8263#8283#0" />
+            <element signature="e#8316#8682#0" />
+            <element signature="e#8693#8717#0" />
+            <element signature="e#8728#8753#0" />
+            <element signature="e#8786#9167#0" />
+            <element signature="e#9178#9207#0" />
+            <element signature="e#9231#9373#0" />
+            <element signature="e#9387#9407#0" />
+            <element signature="e#9413#9436#0" />
+            <element signature="e#9474#10423#0" />
+            <element signature="e#9989#10046#0" />
+            <element signature="e#10060#10116#0" />
+            <element signature="e#10149#10414#0" />
+            <element signature="e#10429#10456#0" />
+            <element signature="e#10462#10481#0" />
+            <element signature="e#10512#15127#0" />
+            <element signature="e#11018#11260#0" />
+            <element signature="e#11270#11285#0" />
+            <element signature="e#11314#11777#0" />
+            <element signature="e#12881#13112#0" />
+            <element signature="e#13189#13341#0" />
+            <element signature="e#13612#14425#0" />
+            <element signature="e#13646#13980#0" />
+            <element signature="e#13789#13964#0" />
+            <element signature="e#13998#14415#0" />
+            <element signature="e#14435#14454#0" />
+            <element signature="e#14969#15120#0" />
+            <element signature="e#15133#15156#0" />
+            <element signature="e#15162#15178#0" />
+            <element signature="e#15206#40545#0" />
+            <element signature="e#15328#15563#0" />
+            <element signature="e#15363#15413#0" />
+            <element signature="e#15431#15481#0" />
+            <element signature="e#15600#15838#0" />
+            <element signature="e#15634#15686#0" />
+            <element signature="e#15704#15756#0" />
+            <element signature="e#16142#16158#0" />
+            <element signature="e#16862#22424#0" />
+            <element signature="e#16996#17013#0" />
+            <element signature="e#17150#17360#0" />
+            <element signature="e#17423#22378#0" />
+            <element signature="e#17559#22363#0" />
+            <element signature="e#17836#22342#0" />
+            <element signature="e#18431#18936#0" />
+            <element signature="e#18497#18801#0" />
+            <element signature="e#18992#19491#0" />
+            <element signature="e#19055#19356#0" />
+            <element signature="e#19547#20046#0" />
+            <element signature="e#19610#19911#0" />
+            <element signature="e#21011#21342#0" />
+            <element signature="e#21118#21316#0" />
+            <element signature="e#21400#21731#0" />
+            <element signature="e#21507#21705#0" />
+            <element signature="e#21789#22120#0" />
+            <element signature="e#21896#22094#0" />
+            <element signature="e#22393#22414#0" />
+            <element signature="e#22496#22853#0" />
+            <element signature="e#22660#22687#0" />
+            <element signature="e#22761#22841#0" />
+            <element signature="e#22867#23033#0" />
+            <element signature="e#23077#28802#0" />
+            <element signature="e#23133#28790#0" />
+            <element signature="e#23231#23483#0" />
+            <element signature="e#23584#23836#0" />
+            <element signature="e#23935#24183#0" />
+            <element signature="e#24284#24439#0" />
+            <element signature="e#24482#24559#0" />
+            <element signature="e#24581#24661#0" />
+            <element signature="e#24703#24780#0" />
+            <element signature="e#24802#24882#0" />
+            <element signature="e#25851#26115#0" />
+            <element signature="e#26635#26781#0" />
+            <element signature="e#26787#26968#0" />
+            <element signature="e#27007#27314#0" />
+            <element signature="e#27375#27682#0" />
+            <element signature="e#27724#28028#0" />
+            <element signature="e#28050#28504#0" />
+            <element signature="e#28543#28775#0" />
+            <element signature="e#28816#28971#0" />
+            <element signature="e#29243#29263#0" />
+            <element signature="e#29273#29292#0" />
+            <element signature="e#29645#30822#0" />
+            <element signature="e#29897#30622#0" />
+            <element signature="e#29966#30606#0" />
+            <element signature="e#30640#30811#0" />
+            <element signature="e#30833#30856#0" />
+            <element signature="e#30866#30881#0" />
+            <element signature="e#31261#33672#0" />
+            <element signature="e#31500#33478#0" />
+            <element signature="e#31559#33462#0" />
+            <element signature="e#31687#31753#0" />
+            <element signature="e#32230#32405#0" />
+            <element signature="e#32477#32661#0" />
+            <element signature="e#32704#33342#0" />
+            <element signature="e#32918#33320#0" />
+            <element signature="e#33043#33150#0" />
+            <element signature="e#33184#33294#0" />
+            <element signature="e#33496#33662#0" />
+            <element signature="e#33683#33702#0" />
+            <element signature="e#33712#33731#0" />
+            <element signature="e#34065#39895#0" />
+            <element signature="e#35266#39702#0" />
+            <element signature="e#35325#37070#0" />
+            <element signature="e#35374#36187#0" />
+            <element signature="e#35483#35776#0" />
+            <element signature="e#35860#36165#0" />
+            <element signature="e#36239#37052#0" />
+            <element signature="e#36348#36641#0" />
+            <element signature="e#36725#37030#0" />
+            <element signature="e#37091#37116#0" />
+            <element signature="e#37837#39544#0" />
+            <element signature="e#37886#38697#0" />
+            <element signature="e#38011#38470#0" />
+            <element signature="e#38500#38584#0" />
+            <element signature="e#38749#39525#0" />
+            <element signature="e#38874#39299#0" />
+            <element signature="e#39329#39413#0" />
+            <element signature="e#39563#39592#0" />
+            <element signature="e#39720#39885#0" />
+            <element signature="e#39906#39929#0" />
+            <element signature="e#39954#40536#0" />
+            <element signature="e#40551#40571#0" />
+            <element signature="e#40577#40587#0" />
+            <element signature="e#40610#46342#0" />
+            <element signature="e#40939#46042#0" />
+            <element signature="e#41304#41315#0" />
+            <element signature="e#41746#41761#0" />
+            <element signature="e#41775#41788#0" />
+            <element signature="e#41833#46000#0" />
+            <element signature="e#42196#42357#0" />
+            <element signature="e#42735#45815#0" />
+            <element signature="e#42932#45797#0" />
+            <element signature="e#43057#43173#0" />
+            <element signature="e#43203#45774#0" />
+            <element signature="e#43312#43321#0" />
+            <element signature="e#43584#43694#0" />
+            <element signature="e#43728#43850#0" />
+            <element signature="e#43879#43892#0" />
+            <element signature="e#43922#43932#0" />
+            <element signature="e#44197#44308#0" />
+            <element signature="e#44342#44465#0" />
+            <element signature="e#44494#44508#0" />
+            <element signature="e#44538#44548#0" />
+            <element signature="e#44811#44922#0" />
+            <element signature="e#44956#45079#0" />
+            <element signature="e#45108#45122#0" />
+            <element signature="e#45152#45167#0" />
+            <element signature="e#45218#45334#0" />
+            <element signature="e#45368#45496#0" />
+            <element signature="e#45525#45544#0" />
+            <element signature="e#46015#46032#0" />
+            <element signature="e#46090#46210#0" />
+            <element signature="e#46235#46333#0" />
+            <element signature="e#46348#46362#0" />
+            <element signature="e#46368#46384#0" />
+            <element signature="e#46413#56904#0" />
+            <element signature="e#46935#46955#0" />
+            <element signature="e#47011#47247#0" />
+            <element signature="e#47563#47587#0" />
+            <element signature="e#47597#47613#0" />
+            <element signature="e#47669#50588#0" />
+            <element signature="e#47842#50576#0" />
+            <element signature="e#48096#48412#0" />
+            <element signature="e#48493#48503#0" />
+            <element signature="e#48700#48710#0" />
+            <element signature="e#48960#48971#0" />
+            <element signature="e#49351#49361#0" />
+            <element signature="e#49457#49549#0" />
+            <element signature="e#49826#49991#0" />
+            <element signature="e#50133#50222#0" />
+            <element signature="e#50261#50410#0" />
+            <element signature="e#50602#50698#0" />
+            <element signature="e#50707#50727#0" />
+            <element signature="e#50788#56660#0" />
+            <element signature="e#50984#51001#0" />
+            <element signature="e#51138#51293#0" />
+            <element signature="e#51357#56648#0" />
+            <element signature="e#51445#56633#0" />
+            <element signature="e#51859#56612#0" />
+            <element signature="e#52454#53016#0" />
+            <element signature="e#52520#52881#0" />
+            <element signature="e#53072#53625#0" />
+            <element signature="e#53135#53490#0" />
+            <element signature="e#53681#54234#0" />
+            <element signature="e#53744#54099#0" />
+            <element signature="e#55203#55628#0" />
+            <element signature="e#55310#55602#0" />
+            <element signature="e#55686#56108#0" />
+            <element signature="e#55793#56082#0" />
+            <element signature="e#56166#56589#0" />
+            <element signature="e#56273#56563#0" />
+            <element signature="e#56685#56897#0" />
+            <element signature="e#56910#56930#0" />
+            <element signature="e#56936#56947#0" />
+            <element signature="e#56971#61375#0" />
+            <element signature="e#57032#57043#0" />
+            <element signature="e#57084#59651#0" />
+            <element signature="e#57266#57277#0" />
+            <element signature="e#57320#57404#0" />
+            <element signature="e#57422#57483#0" />
+            <element signature="e#57753#57767#0" />
+            <element signature="e#57805#58122#0" />
+            <element signature="e#58019#58108#0" />
+            <element signature="e#58140#58275#0" />
+            <element signature="e#58188#58261#0" />
+            <element signature="e#58289#58301#0" />
+            <element signature="e#58337#58584#0" />
+            <element signature="e#58602#58766#0" />
+            <element signature="e#58779#58791#0" />
+            <element signature="e#59050#59212#0" />
+            <element signature="e#59226#59240#0" />
+            <element signature="e#59253#59285#0" />
+            <element signature="e#59660#59673#0" />
+            <element signature="e#59687#61368#0" />
+            <element signature="e#59722#59870#0" />
+            <element signature="e#59958#60027#0" />
+            <element signature="e#60158#60169#0" />
+            <element signature="e#60295#60309#0" />
+            <element signature="e#60410#60422#0" />
+            <element signature="e#60572#60584#0" />
+            <element signature="e#60817#61106#0" />
+            <element signature="e#61157#61356#0" />
+            <element signature="e#61254#61342#0" />
+            <element signature="e#61381#61396#0" />
+            <element signature="e#61402#61416#0" />
+            <element signature="e#61447#64125#0" />
+            <element signature="e#61475#63947#0" />
+            <element signature="e#61644#63934#0" />
+            <element signature="e#61702#61713#0" />
+            <element signature="e#61775#62262#0" />
+            <element signature="e#61835#62242#0" />
+            <element signature="e#62280#62296#0" />
+            <element signature="e#62367#63348#0" />
+            <element signature="e#62431#62858#0" />
+            <element signature="e#62920#63327#0" />
+            <element signature="e#63366#63376#0" />
+            <element signature="e#63435#63919#0" />
+            <element signature="e#63493#63899#0" />
+            <element signature="e#63972#64117#0" />
+            <element signature="e#64131#64149#0" />
+            <element signature="e#64155#64174#0" />
+            <element signature="e#64218#73108#0" />
+            <element signature="e#64303#72587#0" />
+            <element signature="e#64354#72575#0" />
+            <element signature="e#64525#64541#0" />
+            <element signature="e#64576#72482#0" />
+            <element signature="e#64641#72462#0" />
+            <element signature="e#64729#64740#0" />
+            <element signature="e#64785#65206#0" />
+            <element signature="e#64837#64994#0" />
+            <element signature="e#65043#65178#0" />
+            <element signature="e#65232#65248#0" />
+            <element signature="e#65298#69271#0" />
+            <element signature="e#65422#65576#0" />
+            <element signature="e#65610#65759#0" />
+            <element signature="e#65875#68822#0" />
+            <element signature="e#66041#68790#0" />
+            <element signature="e#66645#67037#0" />
+            <element signature="e#67079#67289#0" />
+            <element signature="e#67438#67620#0" />
+            <element signature="e#67770#68075#0" />
+            <element signature="e#68135#68689#0" />
+            <element signature="e#68856#69245#0" />
+            <element signature="e#68910#69057#0" />
+            <element signature="e#69095#69215#0" />
+            <element signature="e#69297#69307#0" />
+            <element signature="e#69351#72439#0" />
+            <element signature="e#69636#72008#0" />
+            <element signature="e#69796#71976#0" />
+            <element signature="e#70635#70811#0" />
+            <element signature="e#70871#71425#0" />
+            <element signature="e#71574#71879#0" />
+            <element signature="e#72042#72413#0" />
+            <element signature="e#72096#72231#0" />
+            <element signature="e#72269#72383#0" />
+            <element signature="e#72504#72524#0" />
+            <element signature="e#72541#72561#0" />
+            <element signature="e#72601#73100#0" />
+            <element signature="e#72628#73090#0" />
+            <element signature="e#72903#73073#0" />
+            <element signature="e#72944#73052#0" />
+            <element signature="e#73114#73137#0" />
+            <element signature="e#73143#73164#0" />
+            <element signature="e#73201#76669#0" />
+            <element signature="e#73742#76660#0" />
+            <element signature="e#73862#76499#0" />
+            <element signature="e#73999#76483#0" />
+            <element signature="e#74063#76465#0" />
+            <element signature="e#74165#76413#0" />
+            <element signature="e#75444#75522#0" />
+            <element signature="e#75591#75669#0" />
+            <element signature="e#75738#75818#0" />
+            <element signature="e#76168#76261#0" />
+            <element signature="e#76295#76387#0" />
+            <element signature="e#76517#76649#0" />
+            <element signature="e#76675#76700#0" />
+            <element signature="e#76706#76732#0" />
+            <element signature="e#76769#82431#0" />
+            <element signature="e#77240#82423#0" />
+            <element signature="e#77365#82156#0" />
+            <element signature="e#77420#82139#0" />
+            <element signature="e#78301#78458#0" />
+            <element signature="e#78519#78676#0" />
+            <element signature="e#78737#78894#0" />
+            <element signature="e#79758#80176#0" />
+            <element signature="e#80253#80358#0" />
+            <element signature="e#80485#81055#0" />
+            <element signature="e#80667#80881#0" />
+            <element signature="e#81132#81237#0" />
+            <element signature="e#81364#81936#0" />
+            <element signature="e#81545#81760#0" />
+            <element signature="e#82014#82120#0" />
+            <element signature="e#82174#82412#0" />
+            <element signature="e#82437#82467#0" />
+            <element signature="e#82473#82489#0" />
+            <element signature="e#82517#82834#0" />
+            <element signature="e#82553#82828#0" />
+            <element signature="e#82643#82818#0" />
+            <element signature="e#82840#82860#0" />
+            <element signature="e#82866#82885#0" />
+            <element signature="e#82912#83903#0" />
+            <element signature="e#83084#83840#0" />
+            <element signature="e#83133#83828#0" />
+            <element signature="e#83223#83370#0" />
+            <element signature="e#83854#83897#0" />
+            <element signature="e#83909#83928#0" />
+            <element signature="e#83934#83949#0" />
+            <element signature="e#83976#84879#0" />
+            <element signature="e#84201#84871#0" />
+            <element signature="e#84631#84861#0" />
+            <element signature="e#84885#84904#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/app/events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="409" column="4" selection-start-line="409" selection-start-column="4" selection-end-line="409" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/_assets/js/listeners.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="201" column="13" lean-forward="true" selection-start-line="201" selection-start-column="13" selection-end-line="201" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

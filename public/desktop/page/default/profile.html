@@ -1,0 +1,28 @@
+<section class="profile-page">
+    <form method="post" class="js-form-submit">
+        <input type="hidden" id="user-token" name="token">
+        <div class="left">
+            <figure class="upload-images">
+                <div class="img user-photo" style="background-image: url(/style/path/img/default-user.jpg);"></div>
+                <label class="upload-button">
+                    <input type="file" name="avatar" class="js-upload-images" data-images="/style/path/img/default-user.jpg">
+                </label>
+            </figure>
+        </div>
+        <div class="right">
+            <div class="f-element">
+                <input type="text" name="username" id="form-user-name" placeholder="">
+                <div class="note-lab __form_note"></div>
+            </div>
+            <div class="f-element">
+                <option value="" class="display-none" id="lang-option"></option>
+                <select name="langId" id="form-user-lang"></select>
+            </div>
+            <div class="f-element">
+                <button type="submit" class="button button-success radius-3" data-lang="txtSave"></button>
+                <button type="button" class="button button-success radius-3 mt-10 js-user-logout" data-lang="txtLogout"></button>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </form>
+</section>

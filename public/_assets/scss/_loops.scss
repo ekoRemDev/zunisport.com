@@ -1,0 +1,242 @@
+/* DOCUMENT INFORMATION
+	- Document: ZuniSport Web Project
+	- Version:  1.0
+	- Author:   Azeroglu Emin
+	- Font: Arial
+*/
+@import "_mixin";
+@import "_objects";
+
+/* Color Return Function */
+@mixin color($type, $clr) {
+  @if $type == "bg" {
+    background-color: map-get($color, color#{$clr});
+  }
+  @else if $type == "color" {
+    color: map-get($color, color#{$clr});
+  }
+}
+/* Color Return Function End */
+
+/* Padding */
+// Padding Top
+@for $i from 0 through 100 {
+  // Padding Full
+  .p-#{$i} {
+    padding: #{$i}px !important;
+  }
+  // Padding Top
+  .pt-#{$i} {
+    padding-top: #{$i}px !important;
+  }
+
+  // Padding Bottom
+  .pb-#{$i} {
+    padding-bottom: #{$i}px !important;
+  }
+
+  // Padding Top And Bottom
+  .ptb-#{$i} {
+    padding-bottom: #{$i}px !important;
+    padding-top: #{$i}px !important;
+  }
+
+  // Padding Left
+  .pl-#{$i} {
+    padding-left: #{$i}px !important;
+  }
+
+  // Padding Right
+  .pr-#{$i} {
+    padding-right: #{$i}px !important;
+  }
+
+  // Padding Left And Right
+  .plr-#{$i} {
+    padding-left: #{$i}px !important;
+    padding-right: #{$i}px !important;
+  }
+
+  // Padding Full
+  .m-p-#{$i} {
+    padding: #{$i}vw !important;
+  }
+  // Padding Top
+  .m-pt-#{$i} {
+    padding-top: #{$i}vw !important;
+  }
+
+  // Padding Bottom
+  .m-pb-#{$i} {
+    padding-bottom: #{$i}vw !important;
+  }
+
+  // Padding Top And Bottom
+  .m-ptb-#{$i} {
+    padding-bottom: #{$i}vw !important;
+    padding-top: #{$i}vw !important;
+  }
+
+  // Padding Left
+  .m-pl-#{$i} {
+    padding-left: #{$i}vw !important;
+  }
+
+  // Padding Right
+  .m-pr-#{$i} {
+    padding-right: #{$i}vw !important;
+  }
+
+  // Padding Left And Right
+  .m-plr-#{$i} {
+    padding-left: #{$i}vw !important;
+    padding-right: #{$i}vw !important;
+  }
+
+  // Margin Full
+  .m-#{$i} {
+    margin: #{$i}px !important;
+  }
+  // Margin Top
+  .mt-#{$i} {
+    margin-top: #{$i}px !important;
+  }
+
+  // Margin Bottom
+  .mb-#{$i} {
+    margin-bottom: #{$i}px !important;
+  }
+
+  // Margin Top And Bottom
+  .mtb-#{$i} {
+    margin-bottom: #{$i}px !important;
+    margin-top: #{$i}px !important;
+  }
+
+  // Margin Left
+  .ml-#{$i} {
+    margin-left: #{$i}px !important;
+  }
+
+  // Margin Right
+  .mr-#{$i} {
+    margin-right: #{$i}px !important;
+  }
+
+  // Margin Left And Right
+  .mlr-#{$i} {
+    margin-left: #{$i}px !important;
+    margin-right: #{$i}px !important;
+  }
+
+
+
+  // Margin Full
+  .m-m-#{$i} {
+    margin: #{$i}vw !important;
+  }
+  // Margin Top
+  .m-mt-#{$i} {
+    margin-top: #{$i}vw !important;
+  }
+
+  // Margin Bottom
+  .m-mb-#{$i} {
+    margin-bottom: #{$i}vw !important;
+  }
+
+  // Margin Top And Bottom
+  .m-mtb-#{$i} {
+    margin-bottom: #{$i}vw !important;
+    margin-top: #{$i}vw !important;
+  }
+
+  // Margin Left
+  .m-ml-#{$i} {
+    margin-left: #{$i}vw !important;
+  }
+
+  // Margin Right
+  .m-mr-#{$i} {
+    margin-right: #{$i}vw !important;
+  }
+
+  // Margin Left And Right
+  .m-mlr-#{$i} {
+    margin-left: #{$i}vw !important;
+    margin-right: #{$i}vw !important;
+  }
+
+
+  .f-size-#{$i} {
+    font-size: #{$i}px !important;
+  }
+}
+
+/* Margin End */
+
+/* X And Y axis */
+// X - Top and Bottom
+@for $i from 0 through 100 {
+  .x-#{$i} {
+    top: #{$i}px !important;
+  }
+  .-x-#{$i} {
+    bottom: #{$i}px !important;
+  }
+}
+
+// Y - Left and Right
+@for $i from 0 through 100 {
+  .y-#{$i} {
+    left: #{$i}px !important;
+  }
+  .-right-#{$i} {
+    right: #{$i}px !important;
+  }
+}
+
+/* X And Y axis End */
+
+/* Color Object */
+@each $clr in $color {
+  $key: nth($clr, 1);
+  $val: nth($clr, 2);
+
+  // Color
+  .clr-#{$key} {
+    color: #{$val} !important;
+  }
+  // Background Color
+  .bg-#{$key} {
+    background-color: #{$val} !important;
+  }
+  // Border 1px
+  .border-1-#{$key} {
+    border: 1px solid #{$val} !important;
+  }
+
+  // Border Color
+  .border-#{$key} {
+    border-color: #{$val} !important;
+  }
+
+}
+/* Color Object End */
+
+/* Border Radius */
+@each $radius in $borderRadius {
+  .radius-#{$radius} {
+    @include border-radius(#{$radius}px);
+  }
+}
+/* Border Radius End */
+
+/* Columns */
+@each $col in $columns {
+  .col-#{$col} {
+    width: #{$col}px !important;
+  }
+}
+/* Columns End */
+

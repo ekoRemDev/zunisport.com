@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="refresh" content="300"/>
+    <meta name="theme-color" content="#39b54a">
+    <!-- Include CSS -->
+    <link rel="stylesheet" href="/style/path/css/style-mobile.css?v1.0.6">
+    <link rel="icon" href="/style/path/img/favicon.ico">
+    <title>ZuniSport</title>
+</head>
+
+<body>
+
+
+    <!-- Container -->
+    <main id="container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="left float-left">
+                <div class="menu-icon js-mobile-menu" data-terms="open"></div>
+                <div class="logo" style="background-image: url('/style/path/img/logo.svg');">
+                    <a href="/" class="link"></a>
+                </div>
+            </div>
+            <div class="right float-right" id="app-login-block">
+                <div class="calendar float-left icon icon-calendar6 js-mobile-calendar"></div>
+
+                <a href="/soccer/search" class="search float-left icon icon-search"></a>
+            </div>
+        </header>
+        <!-- Header End -->
+
+        <div class="calendar-modal">
+            <div id="datepicker" class="datepicker"></div>
+        </div>
+
+        <!-- Menu -->
+        <div id="menu-block">
+            <div class="cover-bg"></div>
+            <div class="content-block">
+                <div class="block-head">
+                    <div class="mini-profile">
+                        <a class="link js-login-modal mobile-login-button"></a>
+                        <figure>
+                            <div class="img user-photo"></div>
+                        </figure>
+                        <div class="name mobile-user-name">&nbsp;</div>
+                        <div class="coins user-coins display-none">
+                            <span class="c-span"></span>
+                            <b class="icon"></b>
+                        </div>
+                    </div>
+                    <div class="menu-close icon icon-cancel js-mobile-menu" data-terms="close"></div>
+                </div>
+                <div class="content">
+                    <div class="head" data-lang="txtSetting"></div>
+                    <div class="list">
+                        <span class="link js-mobile-language">
+                            <i class="icon icon-language"></i>
+                            <span data-lang="txtLanguage"></span>
+                        </span>
+                        <span class="link js-mobile-current display-none" data-dom="current_time">
+                            <i class="icon icon-clock"></i>
+                            <span data-lang="txtCurrentTime"></span>
+                        </span>
+                        <!-- News Block -->
+                        <div class="news-block display-none" id="news-block">
+                            <figure>
+                                <a class="n-link js-login-modal" id="contentsLink"></a>
+                                <div class="img" style="background-image: url('/style/path/img/news.jpg');"></div>
+                            </figure>
+                        </div>
+                        <!-- News Block End -->
+
+                        <!-- Google Play -->
+                        <div class="google-play display-none" id="google-play">
+                            <h2 class="h" data-lang="txtGooglePlay"></h2>
+                            <figure>
+                                <div class="img" style="background-image: url(/style/path/img/google-play.png);"></div>
+                                <a href="https://play.google.com/store/apps/details?id=com.zunisport.android" data-load="no" class="g-link"></a>
+                            </figure>
+                        </div>
+                        <!-- Google Play End -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+
+        <!-- App Container Block -->
+        <div id="app-container"></div>
+        <!-- App Container Block -->
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="/" data-link="/" class="link nav-link active">
+                <span class="icon icon-clock1"></span>
+                <span class="name" data-lang="tabAllGames"></span>
+            </a>
+            <a href="/soccer/live" data-link="live" class="link nav-link">
+                <span class="icon icon-live-games"></span>
+                <span class="name" data-lang="txtLiveGames"></span>
+            </a>
+            <a href="/soccer/prediction" id="mobile-nav-prediction" data-link="prediction" class="link nav-link">
+                <span class="icon icon-prediction"></span>
+                <span class="name" data-lang="txtPrediction"></span>
+            </a>
+            <a href="/soccer/favorite" data-link="favorite" class="link nav-link">
+                <span class="icon icon-star"></span>
+                <span class="name" data-lang="txtFavorite"></span>
+            </a>
+            <a href="/soccer/leagues" data-link="leagues" class="link nav-link">
+                <span class="icon icon-leagues"></span>
+                <span class="name" data-lang="txtLeagues"></span>
+            </a>
+        </footer>
+        <!-- Footer End -->
+
+        <!-- Loading Gif -->
+        <div class="loading-gif">
+            <div class="gif radius-5" style="background-image: url(/style/path/img/loading.svg);"></div>
+        </div>
+        <!-- Loading Gif End -->
+
+        <!-- Modal -->
+        <div class="modal-block js-modal-block">
+            <div class="modal-block-cover"></div>
+            <div class="block-container radius-5 modal-contaie">
+                <div class="block-head">
+                    <h3></h3>
+                    <span class="icon icon-cancel js-modal-close"></span>
+                </div>
+                <div class="block-content"></div>
+            </div>
+        </div>
+        <!-- Modal End -->
+
+        <div id="body-cover"></div>
+
+    </main>
+    <!-- Container End -->
+
+
+    <!-- Include JS -->
+    <script src="/plugin/plugin.Device.js?v1.0.6"></script>
+    <script src="/plugin/plugin.Lodash.js?v1.0.6"></script>
+    <script src="/style/path/js/jquery-3.3.1.min.js?v1.0.6"></script>
+    <script src="/style/path/js/popper.min.js?v1.0.6"></script>
+    <script src="/style/path/js/bootstrap.min.js?v1.0.6"></script>
+    <script src="/style/path/js/scrollbar.min.js?v1.0.6"></script>
+    <script src="/style/path/js/jquery-ui.js?v1.0.6"></script>
+    <script src="/style/path/js/jquery.touch.min.js?v1.0.6"></script>
+    <script src="/style/path/js/intlTelInput.min.js?v1.0.6"></script>
+    <script src="/style/path/js/moment.js?v1.0.6"></script>
+    <script src="/path/app/api.js?v1.0.6"></script>
+    <script src="/path/app/language.js?v1.0.6"></script>
+    <script src="/path/helper/helper.js?v1.0.6"></script>
+    <script src="/path/app/request.js?v1.0.6"></script>
+    <script src="/path/app/methods.js?v1.0.6"></script>
+    <script src="/path/app/controller.js?v1.0.6"></script>
+    <script src="/path/app/route.js?v1.0.6"></script>
+    <script src="/path/app/events.js?v1.0.6"></script>
+    <script src="/path/app/responseHandler.js?v1.0.6"></script>
+    <script src="/path/app/init.js?v1.0.6"></script>
+    <script src="/style/path/js/events.js?v1.0.6"></script>
+    <script src="/style/path/js/listeners.js?v1.0.6"></script>
+</body>
+
+</html>
