@@ -64,11 +64,11 @@
                 <div class="icon icon-match-line-up"></div>
                 <div class="text" data-lang="txtLineUp"></div>
             </div>
-            <div class="tab-link js-tab-child no-select display-none" id="tab-statistic">
+            <div class="tab-link js-tab-child no-select" id="tab-statistic">
                 <div class="icon icon-match-statistics"></div>
                 <div class="text" data-lang="txtStatistics"></div>
             </div>
-            <div class="tab-link js-tab-child no-select display-none" id="tab-prediction">
+            <div class="tab-link js-tab-child no-select" id="tab-prediction">
                 <div class="icon icon-prediction"></div>
                 <div class="text" data-lang="txtPrediction"></div>
             </div>
@@ -87,7 +87,7 @@
         <div class="tab-content">
 
             <!-- Tab Info -->
-            <div class="tab-block active app-mathc-info">
+            <div class="tab-block app-mathc-info">
                 <div class="block app-match-info-clone display-none">
 
                     <div class="head">&nbsp;</div>
@@ -256,122 +256,136 @@
             <!-- Tab Statistic End -->
 
             <!-- Tab Prediction -->
-            <div class="tab-block" id="prediction-tab-content">
-                <div class="prediction-content js-prediction-form  js-match-info-tab">
-                    <input type="hidden" id="match-form-id">
-                    <div class="pr-head js-element bg-gradient5">
-                    <span class="check js-match-info-link js-element-active active" data-name="prType"
-                          data-value="ht_win" data data-lang="txtPrHt"></span>
-                        <span class="check js-match-info-link js-element-active" data-name="prType" data-value="ft_win"
-                              data-lang="txtPrFt"></span>
+            <div class="tab-block active" id="prediction-tab-content">
+                <!--<div class="prediction-content js-prediction-form  js-match-info-tab">-->
+                    <!--<input type="hidden" id="match-form-id">-->
+                    <!--<div class="pr-head js-element bg-gradient5">-->
+                    <!--<span class="check js-match-info-link js-element-active active" data-name="prType"-->
+                          <!--data-value="ht_win" data data-lang="txtPrHt"></span>-->
+                        <!--<span class="check js-match-info-link js-element-active" data-name="prType" data-value="ft_win"-->
+                              <!--data-lang="txtPrFt"></span>-->
+                    <!--</div>-->
+
+                    <!--<div class="js-match-info-child active">-->
+                        <!--<div class="pr-match-add" id="ht_win">-->
+                            <!--<div class="pr-content">-->
+                                <!--<p class="txt" data-lang="txtPrHead"></p>-->
+                                <!--<div class="pr-box js-element">-->
+                                    <!--<div class="pr-list js-element-active" data-name="prValue" data-value="home">-->
+                                        <!--<span class="prspan">1</span>-->
+                                        <!--<span class="num _htHome"></span>-->
+                                    <!--</div>-->
+                                    <!--<div class="pr-list js-element-active" data-name="prValue" data-value="draw">-->
+                                        <!--<span class="prspan">x</span>-->
+                                        <!--<span class="num _htDraw"></span>-->
+                                    <!--</div>-->
+                                    <!--<div class="pr-list js-element-active" data-name="prValue" data-value="away">-->
+                                        <!--<span class="prspan">2</span>-->
+                                        <!--<span class="num _htAway"></span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="pr-value js-element">-->
+                                    <!--<input type="text" name="amount" onfocus="$(this).removeClass('warning-bg')"-->
+                                           <!--autocomplete="off" onkeypress="Help.InputValue(event,$(this),'yes')">-->
+                                <!--</div>-->
+                                <!--<div class="pr-button">-->
+                                    <!--<button class="button button-success js-predition-button"-->
+                                            <!--data-lang="txtPrButton"></button>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                        <!--</div>-->
+
+                        <!--<div class="predict-success display-none pr-match-info" id="ht_win_info">-->
+                            <!--<div class="remove icon icon-delete js-pr-remove pr-remove-id" data-type="ht_win"></div>-->
+                            <!--<div class="success icon icon-success"></div>-->
+                            <!--<div class="txt" data-lang="txtPrMatchInfo"></div>-->
+                            <!--<div class="box">-->
+                                <!--<div class="list">-->
+                                    <!--<div class="l-txt" data-lang="txtWin"></div>-->
+                                    <!--<div class="l-bx _pr-factor"></div>-->
+                                <!--</div>-->
+                                <!--<div class="list">-->
+                                    <!--<div class="l-txt" data-lang="txtAmount"></div>-->
+                                    <!--<div class="l-bx _pr-amount"></div>-->
+                                <!--</div>-->
+                                <!--<div class="list">-->
+                                    <!--<div class="l-txt" data-lang="txtGain"></div>-->
+                                    <!--<div class="l-bx _pr-gain"></div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                    <!--</div>-->
+
+                    <!--<div class="js-match-info-child">-->
+                        <!--<div class="pr-match-add" id="ft_win">-->
+                            <!--<div class="pr-content">-->
+                                <!--<p class="txt" data-lang="txtPrHead"></p>-->
+                                <!--<div class="pr-box js-element">-->
+                                    <!--<div class="pr-list js-element-active" data-name="prValue" data-value="home">-->
+                                        <!--<span class="prspan">1</span>-->
+                                        <!--<span class="num _ftHome"></span>-->
+                                    <!--</div>-->
+                                    <!--<div class="pr-list js-element-active" data-name="prValue" data-value="draw">-->
+                                        <!--<span class="prspan">x</span>-->
+                                        <!--<span class="num _ftDraw"></span>-->
+                                    <!--</div>-->
+                                    <!--<div class="pr-list js-element-active" data-name="prValue" data-value="away">-->
+                                        <!--<span class="prspan">2</span>-->
+                                        <!--<span class="num _ftAway"></span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="pr-value js-element">-->
+                                    <!--<input type="text" name="amount" onfocus="$(this).removeClass('warning-bg')"-->
+                                           <!--autocomplete="off" onkeypress="Help.InputValue(event,$(this),'yes')">-->
+                                <!--</div>-->
+                                <!--<div class="pr-button">-->
+                                    <!--<button class="button button-success js-predition-button"-->
+                                            <!--data-lang="txtPrButton"></button>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                        <!--</div>-->
+
+                        <!--<div class="predict-success display-none pr-match-info" id="ft_win_info">-->
+                            <!--<div class="remove icon icon-delete js-pr-remove pr-remove-id" data-type="ft_win"></div>-->
+                            <!--<div class="success icon icon-success"></div>-->
+                            <!--<div class="txt" data-lang="txtPrMatchInfo"></div>-->
+                            <!--<div class="box">-->
+                                <!--<div class="list">-->
+                                    <!--<div class="l-txt" data-lang="txtWin"></div>-->
+                                    <!--<div class="l-bx _pr-factor"></div>-->
+                                <!--</div>-->
+                                <!--<div class="list">-->
+                                    <!--<div class="l-txt" data-lang="txtAmount"></div>-->
+                                    <!--<div class="l-bx _pr-amount"></div>-->
+                                <!--</div>-->
+                                <!--<div class="list">-->
+                                    <!--<div class="l-txt" data-lang="txtGain"></div>-->
+                                    <!--<div class="l-bx _pr-gain"></div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                    <!--</div>-->
+
+                <!--</div>-->
+
+                <div class="predict-content">
+                    <div class="head" data-lang="txtPredictHead"></div>
+                    <div class="pr-content">
+                        <div class="input-content">
+                            <input type="text" class="input" maxlength="2" onkeypress="Help.InputValue(event,$(this))">
+                            <div class="input">:</div>
+                            <input type="text" class="input" maxlength="2" onkeypress="Help.InputValue(event,$(this))">
+                        </div>
+                        <div class="buttons">
+                            <button type="submit" class="button" data-dom="predict-set-button" data-event="predictAdd" data-lang="txtPrButton"></button>
+                            <div class="bt-txt" data-lang="txtPredictNote"></div>
+                        </div>
                     </div>
-
-                    <div class="js-match-info-child active">
-                        <div class="pr-match-add" id="ht_win">
-                            <div class="pr-content">
-                                <p class="txt" data-lang="txtPrHead"></p>
-                                <div class="pr-box js-element">
-                                    <div class="pr-list js-element-active" data-name="prValue" data-value="home">
-                                        <span class="prspan">1</span>
-                                        <span class="num _htHome"></span>
-                                    </div>
-                                    <div class="pr-list js-element-active" data-name="prValue" data-value="draw">
-                                        <span class="prspan">x</span>
-                                        <span class="num _htDraw"></span>
-                                    </div>
-                                    <div class="pr-list js-element-active" data-name="prValue" data-value="away">
-                                        <span class="prspan">2</span>
-                                        <span class="num _htAway"></span>
-                                    </div>
-                                </div>
-                                <div class="pr-value js-element">
-                                    <input type="text" name="amount" onfocus="$(this).removeClass('warning-bg')"
-                                           autocomplete="off" onkeypress="Help.InputValue(event,$(this),'yes')">
-                                </div>
-                                <div class="pr-button">
-                                    <button class="button button-success js-predition-button"
-                                            data-lang="txtPrButton"></button>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="predict-success display-none pr-match-info" id="ht_win_info">
-                            <div class="remove icon icon-delete js-pr-remove pr-remove-id" data-type="ht_win"></div>
-                            <div class="success icon icon-success"></div>
-                            <div class="txt" data-lang="txtPrMatchInfo"></div>
-                            <div class="box">
-                                <div class="list">
-                                    <div class="l-txt" data-lang="txtWin"></div>
-                                    <div class="l-bx _pr-factor"></div>
-                                </div>
-                                <div class="list">
-                                    <div class="l-txt" data-lang="txtAmount"></div>
-                                    <div class="l-bx _pr-amount"></div>
-                                </div>
-                                <div class="list">
-                                    <div class="l-txt" data-lang="txtGain"></div>
-                                    <div class="l-bx _pr-gain"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="js-match-info-child">
-                        <div class="pr-match-add" id="ft_win">
-                            <div class="pr-content">
-                                <p class="txt" data-lang="txtPrHead"></p>
-                                <div class="pr-box js-element">
-                                    <div class="pr-list js-element-active" data-name="prValue" data-value="home">
-                                        <span class="prspan">1</span>
-                                        <span class="num _ftHome"></span>
-                                    </div>
-                                    <div class="pr-list js-element-active" data-name="prValue" data-value="draw">
-                                        <span class="prspan">x</span>
-                                        <span class="num _ftDraw"></span>
-                                    </div>
-                                    <div class="pr-list js-element-active" data-name="prValue" data-value="away">
-                                        <span class="prspan">2</span>
-                                        <span class="num _ftAway"></span>
-                                    </div>
-                                </div>
-                                <div class="pr-value js-element">
-                                    <input type="text" name="amount" onfocus="$(this).removeClass('warning-bg')"
-                                           autocomplete="off" onkeypress="Help.InputValue(event,$(this),'yes')">
-                                </div>
-                                <div class="pr-button">
-                                    <button class="button button-success js-predition-button"
-                                            data-lang="txtPrButton"></button>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="predict-success display-none pr-match-info" id="ft_win_info">
-                            <div class="remove icon icon-delete js-pr-remove pr-remove-id" data-type="ft_win"></div>
-                            <div class="success icon icon-success"></div>
-                            <div class="txt" data-lang="txtPrMatchInfo"></div>
-                            <div class="box">
-                                <div class="list">
-                                    <div class="l-txt" data-lang="txtWin"></div>
-                                    <div class="l-bx _pr-factor"></div>
-                                </div>
-                                <div class="list">
-                                    <div class="l-txt" data-lang="txtAmount"></div>
-                                    <div class="l-bx _pr-amount"></div>
-                                </div>
-                                <div class="list">
-                                    <div class="l-txt" data-lang="txtGain"></div>
-                                    <div class="l-bx _pr-gain"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
                 </div>
-
 
             </div>
             <!-- Tab Prediction End -->

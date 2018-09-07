@@ -112,6 +112,13 @@ Language = {
         txtSubscriptionSystemError: 'Please enter the correct code',
         txtOwnGoal: 'OG',
         txtPenaltyGoal: 'PEN',
+        txtTermsAndConditions: 'Terms and conditions',
+        txtAllRight: 'All Rights Reserved.',
+        txtTermsAndConditions: 'Terms and conditions',
+        txtAbout: 'About',
+        txtPredictHead: 'Game Predict',
+        txtPredictNote: 'Every predict is 500 coins',
+
     },
     /* English End */
 
@@ -327,6 +334,10 @@ Language = {
         txtSubscriptionSystemError: 'Zəhmət olmasa düzgün kodu girin.',
         txtOwnGoal: 'AQ',
         txtPenaltyGoal: 'PEN',
+        txtTermsAndConditions: 'Şərtlər və tələblər',
+        txtAllRight: 'Bütün hüquqlar qorunur.',
+        txtTermsAndConditions: 'Şərtlər və Qaydalar',
+        txtAbout: 'Haqqımızda',
     },
     /* Azerbaycan End */
 

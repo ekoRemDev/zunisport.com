@@ -37,7 +37,8 @@ ApiPath = {
         handleEvent: '/handle/event',
         topics: '{token}/rel/topics/{topic}',
         search: '/search',
-        userSubscription: 'user/subscription'
+        userSubscription: 'user/subscription',
+        portalPage: '/portal/page'
     },
     /* General End */
 

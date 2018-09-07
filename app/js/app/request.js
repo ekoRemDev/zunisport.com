@@ -340,4 +340,16 @@ Request = {
     },
     /* News Request End */
 
+    /* Set Prediction */
+    setPrediction: params => {
+        Help.requset({
+            url: ApiUrl + ApiPath.Predictions.add,
+            type: 'post',
+            value: params.value,
+            callback: res => {
+                params.callback(res);
+            }
+        })
+    }
+
 };

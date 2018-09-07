@@ -2501,3 +2501,17 @@ section.leagues-block .list .sub-tournament .link {
   font-size: 4vw;
   margin-top: 5vw;
 }
+
+section.setting-text {
+  width: 100%;
+  height: 120vw;
+  overflow: hidden;
+  overflow-y: auto;
+  padding: 5vw;
+  font-size: 3.5vw;
+  .head {
+    font-size: 4vw;
+    font-weight: 500;
+    margin-bottom: 5vw;
+  }
+}

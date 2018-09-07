@@ -1,28 +1,28 @@
 /* DOCUMENT INFORMATION
-	- Document: ZuniSport Web Project
-	- Version:  1.0
-	- Author:   Azeroglu Emin
-*/
+ - Document: ZuniSport Web Project
+ - Version:  1.0
+ - Author:   Azeroglu Emin
+ */
 
 /* [ Help Object ] */
 Help = {
 
     /* Seo */
-    Seo: function (url) {
+    Seo: function ( url ) {
         // make the url lowercase
-        var encodedUrl = url.toString().toLowerCase();
+        var encodedUrl = url.toString ().toLowerCase ();
 
         // replace & with and
-        encodedUrl = encodedUrl.split(/\&+/).join("-and-")
+        encodedUrl = encodedUrl.split ( /\&+/ ).join ( "-and-" )
 
         // remove invalid characters
-        encodedUrl = encodedUrl.split(/[^a-z0-9]/).join("-");
+        encodedUrl = encodedUrl.split ( /[^a-z0-9]/ ).join ( "-" );
 
         // remove duplicates
-        encodedUrl = encodedUrl.split(/-+/).join("-");
+        encodedUrl = encodedUrl.split ( /-+/ ).join ( "-" );
 
         // trim leading & trailing characters
-        encodedUrl = encodedUrl.trim('-');
+        encodedUrl = encodedUrl.trim ( '-' );
 
         return encodedUrl;
     },
@@ -30,8 +30,8 @@ Help = {
 
     /* User Token */
     Token: function () {
-        var token = localStorage.getItem('userToken');
-        if (token)
+        var token = localStorage.getItem ( 'userToken' );
+        if ( token )
             return token;
         return null;
     },
@@ -39,39 +39,39 @@ Help = {
 
     /* Client Token */
     TokenClient: function () {
-        var token = localStorage.getItem('clientToken');
-        if (token)
+        var token = localStorage.getItem ( 'clientToken' );
+        if ( token )
             return token;
         return null;
     },
     /* Client Token End */
 
     /* Onyl Number Value */
-    InputValue: function (evt, object, type) {
+    InputValue: function ( evt, object, type ) {
         object = object ? object : '';
         type = type ? type : '';
         var theEvent = evt || window.event;
         var key = theEvent.keyCode || theEvent.which;
-        key = String.fromCharCode(key);
+        key = String.fromCharCode ( key );
         var regex = /[0-9+]|\./;
-        if (!regex.test(key) && evt.which != 13 && evt.which != 8) {
+        if ( !regex.test ( key ) && evt.which != 13 && evt.which != 8 ) {
             theEvent.returnValue = false;
-            if (theEvent.preventDefault) theEvent.preventDefault();
+            if ( theEvent.preventDefault ) theEvent.preventDefault ();
         }
-        else if (evt.which == 13 && type == '') {
-            object.parents('.f-element').find('button').trigger('click');
+        else if ( evt.which == 13 && type == '' ) {
+            object.parents ( '.f-element' ).find ( 'button' ).trigger ( 'click' );
         }
 
-        if (type != '' && object.val() > UserParams.score) {
-            object.val(UserParams.score);
+        if ( type != '' && object.val () > UserParams.score ) {
+            object.val ( UserParams.score );
         }
     },
     /* Onyl Number Value End */
 
     /* Portal Id */
     PortalId: function () {
-        var portal = localStorage.getItem('portalId');
-        if (portal)
+        var portal = localStorage.getItem ( 'portalId' );
+        if ( portal )
             return portal;
         return null;
     },
@@ -79,8 +79,8 @@ Help = {
 
     /* Lang Id */
     LangId: function () {
-        var lang = localStorage.getItem('Language');
-        if (lang)
+        var lang = localStorage.getItem ( 'Language' );
+        if ( lang )
             return lang;
         return null;
     },
@@ -88,44 +88,44 @@ Help = {
 
     /* Lang Name */
     LangName: function () {
-        var lang = localStorage.getItem('LanguageCode');
+        var lang = localStorage.getItem ( 'LanguageCode' );
 
-        if (Language[lang])
+        if ( Language[ lang ] )
             return lang;
         return 'en';
     },
     /* Lang Name End */
 
     /* DateFormat */
-    Date: function (day) {
+    Date: function ( day ) {
         day = day ? day : '';
-        var date = new Date();
-        if (day == 7) {
-            var d = date.getDate() + 7;
-            if (d < 10) d = '0' + d;
-            var m = date.getMonth() + 1;
-            if (m < 10) m = '0' + m;
-            var y = date.getFullYear();
+        var date = new Date ();
+        if ( day == 7 ) {
+            var d = date.getDate () + 7;
+            if ( d < 10 ) d = '0' + d;
+            var m = date.getMonth () + 1;
+            if ( m < 10 ) m = '0' + m;
+            var y = date.getFullYear ();
             return m + '/' + d + '/' + y;
         }
-        else if (day == 0) {
-            var d = date.getDate();
-            if (d < 10) d = '0' + d;
-            var m = date.getMonth() + 1;
-            if (m < 10) m = '0' + m;
-            var y = date.getFullYear();
-            var h = date.getHours();
-            if (h < 10) h = '0' + h;
-            var min = date.getMinutes();
-            if (min < 10) min = '0' + min;
+        else if ( day == 0 ) {
+            var d = date.getDate ();
+            if ( d < 10 ) d = '0' + d;
+            var m = date.getMonth () + 1;
+            if ( m < 10 ) m = '0' + m;
+            var y = date.getFullYear ();
+            var h = date.getHours ();
+            if ( h < 10 ) h = '0' + h;
+            var min = date.getMinutes ();
+            if ( min < 10 ) min = '0' + min;
             return d + '.' + m + '.' + y + ' ' + h + ':' + min;
         }
         else {
-            var d = date.getDate();
-            if (d < 10) d = '0' + d;
-            var m = date.getMonth() + 1;
-            if (m < 10) m = '0' + m;
-            var y = date.getFullYear();
+            var d = date.getDate ();
+            if ( d < 10 ) d = '0' + d;
+            var m = date.getMonth () + 1;
+            if ( m < 10 ) m = '0' + m;
+            var y = date.getFullYear ();
             return d + '.' + m + '.' + y;
         }
 
@@ -133,27 +133,27 @@ Help = {
     /* DateFormat End */
 
     /* DateFormat */
-    DateFormat: function (object) {
-        var date = object.Data.split(' '),
-            year = date[0].split("-")[0],
-            month = date[0].split("-")[1],
-            day = date[0].split("-")[2],
-            hour = date[1].split(":")[0],
-            minute = date[1].split(":")[1];
+    DateFormat: function ( object ) {
+        var date = object.Data.split ( ' ' ),
+            year = date[ 0 ].split ( "-" )[ 0 ],
+            month = date[ 0 ].split ( "-" )[ 1 ],
+            day = date[ 0 ].split ( "-" )[ 2 ],
+            hour = date[ 1 ].split ( ":" )[ 0 ],
+            minute = date[ 1 ].split ( ":" )[ 1 ];
 
-        if (object.Type == "default") {
+        if ( object.Type == "default" ) {
             return year + "." + month + "." + day + " " + hour + ":" + minute;
         }
-        else if (object.Type == "date") {
+        else if ( object.Type == "date" ) {
             return day + "." + month + "." + year;
         }
-        else if (object.Type == "dateLine") {
+        else if ( object.Type == "dateLine" ) {
             return day + "-" + month + "-" + year;
         }
-        else if (object.Type == "shortDate") {
+        else if ( object.Type == "shortDate" ) {
             return day + "-" + month;
         }
-        else if (object.Type == 'time') {
+        else if ( object.Type == 'time' ) {
             return hour + ':' + minute;
         }
     },
@@ -161,47 +161,45 @@ Help = {
 
     /* Live Minute */
     LiveMinute: function () {
-        var currentTz = moment().format('Z');
-        var momentDate = moment();
-        momentDate.utcOffset(currentTz);       
+        var currentTz = moment ().format ( 'Z' );
+        var momentDate = moment ();
+        momentDate.utcOffset ( currentTz );
         return momentDate;
     },
     /* Live Minute End */
 
     /* Diffrent Date */
-    GetMatchTime: function (object) {
-        var timeZone    =   Help.CurrentTime();;
-        var callback    =   object.callback ? object.callback : '';
-        var startTimeMoment = moment(object.startTime);
-        var minute = startTimeMoment.format("HH:mm");
+    GetMatchTime: function ( object ) {
+        var timeZone = Help.CurrentTime ();
+        ;
+        var callback = object.callback ? object.callback : '';
+        var startTimeMoment = moment ( object.startTime );
+        var minute = startTimeMoment.format ( "HH:mm" );
         var diff = 0;
-        var a = Help.LiveMinute();
-        var b   =   moment(object.preidoTime + timeZone);
-        b   =   moment(b).format();
+        var a = Help.LiveMinute ();
+        var b = moment ( object.preidoTime + timeZone );
+        b = moment ( b ).format ();
 
-        console.log(timeZone);
-        
-
-        if ([0, 60, 100, 120, 110].indexOf(object.currentStatus) < 0) {
-            diff = a.diff(b, 'minutes') + 1;
-            diff = moment(diff)
+        if ( [ 0, 60, 100, 120, 110 ].indexOf ( object.currentStatus ) < 0 ) {
+            diff = a.diff ( b, 'minutes' ) + 1;
+            diff = moment ( diff )
         }
 
-        switch (object.currentStatus) {
+        switch ( object.currentStatus ) {
 
             case 0:
-                var d1 = startTimeMoment.format('yyyy MM dd');
-                var d2 = a.format('yyyy MM dd');
-                if (d1 !== d2) {
-                    if (Help.Url(2) == 'match') {
+                var d1 = startTimeMoment.format ( 'yyyy MM dd' );
+                var d2 = a.format ( 'yyyy MM dd' );
+                if ( d1 !== d2 ) {
+                    if ( Help.Url ( 2 ) == 'match' ) {
                         minute = 'Not started';
                     }
                     else {
-                        if (DV == 'desktop') {
-                            minute = startTimeMoment.format('dd MM HH:mm');
+                        if ( DV == 'desktop' ) {
+                            minute = startTimeMoment.format ( 'dd MM HH:mm' );
                         }
                         else {
-                            minute = startTimeMoment.format('HH:mm');
+                            minute = startTimeMoment.format ( 'HH:mm' );
                         }
                     }
                 }
@@ -210,36 +208,38 @@ Help = {
             /* show counter */
             case 6:
             case 20:
-                if (diff >= 45) {
+                if ( diff >= 45 ) {
                     minute = "45'+";
-                } else {
+                }
+                else {
                     minute = diff + "'";
                 }
                 break;
 
             case 7:
-                if (diff >= 45) {
+                if ( diff >= 45 ) {
                     minute = "90'+";
-                } else {
-                    minute = (45 + diff) + "'";
+                }
+                else {
+                    minute = ( 45 + diff ) + "'";
                 }
                 break;
 
             case 41:
-                if (diff >= 60) {
+                if ( diff >= 60 ) {
                     minute = "105'+";
                 }
                 else {
-                    minute = (90 + diff) + "'";
+                    minute = ( 90 + diff ) + "'";
                 }
                 break;
 
             case 42:
-                if (diff >= 75) {
+                if ( diff >= 75 ) {
                     minute = "120'+";
                 }
                 else {
-                    minute = (90 + diff) + "'";
+                    minute = ( 90 + diff ) + "'";
                 }
                 break;
 
@@ -277,7 +277,7 @@ Help = {
 
             /* Delayed */
             case 61:
-                minute = startTimeMoment.format('HH:mm');
+                minute = startTimeMoment.format ( 'HH:mm' );
                 break;
 
             /* Delayed */
@@ -300,10 +300,10 @@ Help = {
         }
 
         if ( object.callback ) {
-            callback(minute);
+            callback ( minute );
         }
-        
-        
+
+
         return minute;
 
     },
@@ -311,32 +311,33 @@ Help = {
 
     /* TimeZone Id */
     TimeZone: function () {
-        var zone = Help.CurrentTime();;
-        if (zone)
+        var zone = Help.CurrentTime ();
+        ;
+        if ( zone )
             return zone;
         return null;
-    }, 
+    },
     /* TimeZone Id End */
 
     /* Sort Object */
-    Sort: function (object, par) {
+    Sort: function ( object, par ) {
         par = par ? par : '';
-        object.sort(function (a, b) {
-            if (par) {
-                return a[par] - b[par];
+        object.sort ( function ( a, b ) {
+            if ( par ) {
+                return a[ par ] - b[ par ];
             }
             else {
                 return a.time - b.time;
             }
-        });
+        } );
     },
     /* Sort Object End */
 
     /* Player Name */
-    PlayerName: function (data) {
-        var name = data.split(',');
-        if (name[1] && name[0]) {
-            return name[1] + ' ' + name[0];
+    PlayerName: function ( data ) {
+        var name = data.split ( ',' );
+        if ( name[ 1 ] && name[ 0 ] ) {
+            return name[ 1 ] + ' ' + name[ 0 ];
         }
         else {
             return data;
@@ -346,10 +347,10 @@ Help = {
     /* Player Name End */
 
     /* Sport */
-    Sport: function (param) {
+    Sport: function ( param ) {
         var sport = '';
-        if (SportData[Help.Url(1)])
-            sport = SportData[Help.Url(1)][param];
+        if ( SportData[ Help.Url ( 1 ) ] )
+            sport = SportData[ Help.Url ( 1 ) ][ param ];
         else
             sport = '';
         return sport;
@@ -357,38 +358,38 @@ Help = {
     /* Sport End */
 
     /* Match Status */
-    MatchStatus: function (object) {
-        var finishedCode = [100, 110, 120],
-            scheduledCode = [0, 60, 70, 61, 80, 90, 81],
-            liveCode = [0, 60, 61, 70, 80, 81, 90, 100, 110, 120],
-            notStarted = [0, 60, 61, 70];
+    MatchStatus: function ( object ) {
+        var finishedCode = [ 100, 110, 120 ],
+            scheduledCode = [ 0, 60, 70, 61, 80, 90, 81 ],
+            liveCode = [ 0, 60, 61, 70, 80, 81, 90, 100, 110, 120 ],
+            notStarted = [ 0, 60, 61, 70 ];
 
-        if (object.FinishedCode == 'Yes') {
+        if ( object.FinishedCode == 'Yes' ) {
             return finishedCode;
         }
-        else if (object.ScheduledCode == 'Yes') {
+        else if ( object.ScheduledCode == 'Yes' ) {
             return scheduledCode;
         }
-        else if (object.LiveCode == 'Yes') {
+        else if ( object.LiveCode == 'Yes' ) {
             return liveCode;
         }
-        else if (object.NotStarted == 'Yes') {
+        else if ( object.NotStarted == 'Yes' ) {
             return notStarted;
         }
-        else if (object.Type == 'status') {
+        else if ( object.Type == 'status' ) {
 
-            if (finishedCode.indexOf(object.Status) >= 0) {
+            if ( finishedCode.indexOf ( object.Status ) >= 0 ) {
                 return 'FT';
             }
             else {
-                var time = object.StartTime.split(' ')[1],
-                    time = time.split(':');
-                return time[0] + ":" + time[1];
+                var time = object.StartTime.split ( ' ' )[ 1 ],
+                    time = time.split ( ':' );
+                return time[ 0 ] + ":" + time[ 1 ];
             }
         }
         else {
             /* Live Status */
-            if (liveCode.indexOf(object.Live) < 0) {
+            if ( liveCode.indexOf ( object.Live ) < 0 ) {
                 return 'yes';
             }
             else {
@@ -400,67 +401,67 @@ Help = {
     /* Match Status End */
 
     /* Url Method */
-    Url: function ($par) {
+    Url: function ( $par ) {
         var url = window.location.pathname,
-            url = url.split('/');
-        url[1] = url[1] ? url[1].toLowerCase() : 'soccer';
-        url[2] = url[2] ? url[2].toLowerCase() : '';
-        return url[$par];
+            url = url.split ( '/' );
+        url[ 1 ] = url[ 1 ] ? url[ 1 ].toLowerCase () : 'soccer';
+        url[ 2 ] = url[ 2 ] ? url[ 2 ].toLowerCase () : '';
+        return url[ $par ];
     },
     /* Url Method End */
 
     /* Modal Display */
-    Modal: function (param) {
-        if (param == 'show') {
-            $('.js-modal-block').show();
-            $('body').addClass('overflow-hidden');
+    Modal: function ( param ) {
+        if ( param == 'show' ) {
+            $ ( '.js-modal-block' ).show ();
+            $ ( 'body' ).addClass ( 'overflow-hidden' );
         }
-        else if (param == 'hide') {
-            $('.js-modal-block').hide();
-            $('body').removeClass('overflow-hidden');
+        else if ( param == 'hide' ) {
+            $ ( '.js-modal-block' ).hide ();
+            $ ( 'body' ).removeClass ( 'overflow-hidden' );
         }
     },
     /* Modal Display End */
 
     /* Translate Return Data */
-    Translate: function (param) {
-        var id = localStorage.getItem('LanguageCode');
-        return Language[id][param];
+    Translate: function ( param ) {
+        var id = localStorage.getItem ( 'LanguageCode' );
+        return Language[ id ][ param ];
     },
     /* Translate Return Data End */
 
     /* Redirect */
-    Redirect: function (url, time) {
+    Redirect: function ( url, time ) {
         url = url ? url : '';
         time = time ? time : 0;
-        if (url != "") {
-            if (time > 0) {
-                setTimeout(function () {
+        if ( url != "" ) {
+            if ( time > 0 ) {
+                setTimeout ( function () {
                     window.location.href = url;
-                }, time);
+                }, time );
             }
             else {
                 window.location.href = url;
             }
         }
         else {
-            window.location.reload();
+            window.location.reload ();
         }
     },
     /* Redirect End */
 
     /* Loading Gif */
-    Loading: function (param) {
-        if (param == 'show')
-            $('.loading-gif').fadeIn(100)
-        else if (param == 'hide')
-            $('.loading-gif').fadeOut(100)
+    Loading: function ( param ) {
+        if ( param == 'show' )
+            $ ( '.loading-gif' ).fadeIn ( 100 )
+        else if ( param == 'hide' )
+            $ ( '.loading-gif' ).fadeOut ( 100 )
     },
     /* Loading Gif End */
 
     /* Unique Id */
     Unique: function () {
-        var id = 'web_' + Math.random().toString(36).substr(2, 9);
+        var id = 'web_' + Math.random ().toString ( 36 ).substr ( 2, 9 );
         ;
         return id;
     },
@@ -468,18 +469,53 @@ Help = {
 
 
     CurrentTime: function () {
-        var tz = moment().format('Z');
-        var _timeZone = localStorage.getItem('TimeZone');
+        var tz = moment ().format ( 'Z' );
+        var _timeZone = localStorage.getItem ( 'TimeZone' );
 
-        if (_isFirefox == true) {
-            var TimeZone    =   _timeZone;
+        if ( _isFirefox == true ) {
+            var TimeZone = _timeZone;
         }
         else {
-            var TimeZone    =   tz;
+            var TimeZone = tz;
         }
 
         return TimeZone;
-    }
+    },
 
-}
+    /* ======= [ Request ] ======= */
+    requset: params => {
+        const { type, value, url, callback } = params;
+        let req;
+        if ( type == "post" ) {
+            req = $.post ( url, value );
+            req.done ( response => {
+                callback ( response );
+            } ).fail ( err => {
+                callback ( err );
+            } );
+        }
+        else if ( type == "get" ) {
+            req = $.get ( url );
+            req.done ( response => {
+                callback ( response );
+            } ).fail ( err => {
+                callback ( response );
+            } );
+        }
+    },
+    /* ======= [ Request End ] ======= */
+
+    /* ======= [ Event ] ======= */
+    event: params => {
+        $ ( "body" ).on ( params.event, "[data-event=" + params.dom + "]", e => {
+            if ( params.prevent == "yes" ) {
+                e.preventDefault ();
+            }
+            params.callback ( $ ( e.currentTarget ) );
+        } );
+    },
+    /* ======= [ Event End ] ======= */
+
+
+};
 /* [ Help Object End ] */

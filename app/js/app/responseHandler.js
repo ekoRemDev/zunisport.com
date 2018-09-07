@@ -392,16 +392,16 @@ Handler = {
         if (tabLinkCount == 1) {
 
             if (DV == 'mobile') {
-                var width = '20%';
+                var width = '16.655%';
             }
             else {
-                var width = '20%';
+                var width = '16.655%';
             }
             $('#tab-head-block').find('.tab-link').css('width', width);
         }
         else if (tabLinkCount == 2) {
             if (DV == 'mobile') {
-                var width = '33.3%';
+                var width = '25%';
             }
             else {
                 var width = '226px';
@@ -536,20 +536,11 @@ Handler = {
             /* Match Table End */
         }
 
-        if (RequestMatch.Details.predictable == true && Help.Token()) {
-            $('#tab-prediction').removeClass('display-none');
-            $('#tab-statistic').remove();
-            $('.app-match-statics').remove();
+
             /* Match Prediction Info */
             Events.MatchPredictionInfo(RequestMatch.Details, function () {
                 Events.MatchPredictionAdd(RequestMatch.Details);
             });
-        }
-        else {
-            $('#prediction-tab-content').remove();
-            $('#tab-prediction').remove();
-            $('#tab-statistic').removeClass('display-none');
-        }
 
         if (RequestMatch.Info.length > 0) {
             RequestMatch.Info.forEach(function (data) {
@@ -861,6 +852,10 @@ Handler = {
         });
         /* Match Line Up End */
 
+        $('[data-dom=predict-set-button]').attr({
+            'data-value': '{matchId: '+Help.Url(3)+', predictionType}'
+        });
+
         LanguageChange([
             'txtInfo',
             'txtLineUp',
@@ -884,6 +879,9 @@ Handler = {
             'txtWin',
             'txtAmount',
             'txtGain',
+            'txtPredictHead',
+            'txtPredictNote',
+            'txtPrButton'
         ]);
 
     },
@@ -1964,6 +1962,22 @@ Handler = {
         });
     },
     /* News View End */
+
+    /* Footer */
+    FooterBlock: () => {
+        let apiVal  =   {portalId: Help.PortalId(), lang: Help.LangId(), pagePath: 'about'};
+        let apiUrl  = ApiUrl + ApiPath.General.portalPage;
+        let request = $.post(apiUrl, apiVal);
+        let footerText =    $('[data-dom=footerText]');
+
+        request.done((data)=>{
+            footerText.html(data.text);
+        }).fail((err)=>{
+            console.log('Error: Footer Block');
+            console.log(err);
+        });
+    }
+    /* Footer End */
 
 
 };

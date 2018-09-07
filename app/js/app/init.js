@@ -35,8 +35,6 @@ if (!localStorage.getItem('TimeZone')) {
     
     var TimeZone    =   Help.CurrentTime();
 
-    console.log(TimeZone);
-
     $('.et-current-default')
         .text(TimeZone)
         .attr('data-value', TimeZone);
@@ -57,6 +55,10 @@ if (!localStorage.getItem('clientToken')) {
 /* News Block */
 Handler.NewsBlock();
 /* News Block End */
+
+/* Footer Block */
+Handler.FooterBlock();
+/* Footer Block End */
 
 /* App Data and Portal Selection */
 Request.AppData(function () {

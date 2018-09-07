@@ -638,6 +638,10 @@ footer.footer .inner .text {
 footer.footer .inner .text p {
   margin-bottom: 20px;
 }
+footer.footer .inner .text p a {
+  color: map-get($color, color43);
+  cursor: pointer;
+}
 footer.footer .inner .nav-link {
   width: 100%;
 }
@@ -1311,13 +1315,22 @@ footer.footer .inner .nav-link a:hover {
   float: right;
   font-size: 14px;
   cursor: pointer;
-  @include color(color, 6);
+  @include color(color, 3);
   margin-right: 15px;
 }
 .modal-block .block-container .block-content {
   width: 100%;
   overflow: hidden;
   border-top: 1px solid map-get($color, color8);
+}
+.modal-block .block-container ._termsAndConditions {
+  padding: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  height: 643px;
+  overflow: hidden;
+  overflow-y: auto;
 }
 /* Modal Block End */
 
@@ -2291,4 +2304,77 @@ section.profile-page .f-element button {
   font-weight: 500;
   font-size: 14px;
   margin-top: 20px;
+}
+
+/* Prediction */
+.predict-content {
+  $width: 250px;
+  width: $width;
+  margin: 15px auto;
+  overflow: hidden;
+  /* Head */
+  .head {
+    width: 100%;
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+    background: #39b54a;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+  }
+  /* Predict */
+  .pr-content {
+    width: 100%;
+    overflow: hidden;
+    /* Input Content */
+    .input-content {
+      width: 100%;
+      overflow: hidden;
+      margin-top: 15px;
+      /* Input */ 
+      .input {
+        $nth2Width: 20px;
+        width: ($width - $nth2Width)/2;
+        float: left;
+        border: 1px solid #e0e0e0;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        padding: 0 20px;
+        background-color: #fff;
+        font-weight: 500;
+        &:nth-child(2n){
+          width: 20px;
+          padding: 0;
+          border-right: none;
+          border-left: none;
+        }
+      }
+    }
+    /* Buttons */
+    .buttons {
+      width: 100%;
+      text-align: center;
+      /* Button */
+      .button {
+        height: 40px;
+        line-height: 40px;
+        width: 100%;
+        background: #39b54a;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 500;
+        margin: 15px 0;
+      }
+      /* Txt */
+      .bt-txt {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        font-size: 14px;
+        color: lighten(#000, 20%);
+      }
+    }
+  }
 }

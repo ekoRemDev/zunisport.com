@@ -410,7 +410,10 @@ Events = {
     LoginModal: function (object) {
         object  =   object ? object : '';
 		var Portals = object.params ? object.params : RequestData.Portals[0];
-        if (Portals.params.service_banner_enabled == 1 || Portals.params.login_over == 'own') {
+
+        let serviceBannerEnabled = Portals.params.service_banner_enabled || 0;
+
+        if ( serviceBannerEnabled == 1 || Portals.params.login_over == 'own') {
 			Help.Modal('show');
 			$('body .js-modal-block .block-container').html('');
 			$('body .js-modal-block .block-container').load("/" + PathDir + "/_parts/loginModal.html", function () {
@@ -454,8 +457,6 @@ Events = {
     Login: function (object) {
         var terms = object.attr('data-type');
 
-		console.log("Terms: "+terms);
-
         if (terms == 'pars') {
             Help.Loading('show');
             Events.LoginPars(object);
@@ -476,6 +477,7 @@ Events = {
         var Value = {portalId: Help.PortalId()};
         $.post(PostUrl, Value, function (response) {
             Help.Loading('hide');
+
             if (response.code == 200) {
                 window.location.href = response.redirectUrl;
             }
@@ -994,6 +996,33 @@ Events = {
 
     },
     /* Mobile Language End */
+
+    /* Mobile Settings */
+    MobileSettings: (object) => {
+        const terms = object.attr('data-terms');
+        const contentSection = $('body .js-modal-block .block-container');
+        Help.Modal('show');
+        contentSection.html('');
+        contentSection.load("/" + PathDir + "/_parts/settingText.html", () => {
+            Help.requset({
+                url: ApiUrl + ApiPath.General.portalPage,
+                value: {
+                    'portalId': Help.PortalId(),
+                    'lang': Help.LangId(),
+                    'pagePath': terms,
+                },
+                type: 'post',
+                callback: res => {
+                    const head  = res.title ? res.title : '';
+                    const text = res.text ? res.text : '';
+                    const section = $('[data-dom=setting]');
+                    section.find('[data-dom=head]').html(head);
+                    section.find('[data-dom=text]').html(text);
+                }
+            });
+        });
+    },
+    /* Mobile Settings End */
 
     /* Mobile Current */
     MobileCurrentTime: function () {
@@ -1806,4 +1835,26 @@ Events = {
     },
     /* Current Time List End */
 
-}
+    /* Footer Link */
+    FooterLink: () => {
+        Help.Modal('show');
+        let apiVal  =   {portalId: Help.PortalId(), lang: Help.LangId(), pagePath: 'terms'};
+        let apiUrl  = ApiUrl + ApiPath.General.portalPage;
+        let request = $.post(apiUrl, apiVal);
+        let textDom =    $('.modal-block .block-container');
+        textDom.html('');
+        textDom.html('<div class="_termsAndConditions"></div>');
+        textDom = textDom.find('._termsAndConditions');
+
+        request.done((data)=>{
+            Help.Loading('hide');
+            textDom.html(data.text);
+        }).fail((err)=>{
+            Help.Loading('hide');
+            console.log('Error: Footer Block');
+            console.log(err);
+        });
+    }
+    /* Footer Link End */
+
+};
