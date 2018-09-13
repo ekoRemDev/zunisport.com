@@ -411,7 +411,8 @@ Help = {
     /* Url Method End */
 
     /* Modal Display */
-    Modal: function ( param ) {
+    Modal: function ( param, callback ) {
+        callback = callback ? callback : '';
         if ( param == 'show' ) {
             $ ( '.js-modal-block' ).show ();
             $ ( 'body' ).addClass ( 'overflow-hidden' );
@@ -419,6 +420,9 @@ Help = {
         else if ( param == 'hide' ) {
             $ ( '.js-modal-block' ).hide ();
             $ ( 'body' ).removeClass ( 'overflow-hidden' );
+        }
+        if ( callback != '' ) {
+            callback ();
         }
     },
     /* Modal Display End */
@@ -515,6 +519,98 @@ Help = {
         } );
     },
     /* ======= [ Event End ] ======= */
+
+    /* ======= [ Notfication ] ======= */
+    notfication: params => {
+        Help.Modal ( params.terms, () => {
+            const modal = $ ( '[data-dom=modal]' );
+            const container = modal.find ( '[data-dom=container]' ).css ( 'width', ( params.width ? params.width : '500px' ) );
+            container.load ( "/" + PathDir + "/_parts/notficationModal.html", () => {
+                const content = $ ( '[data-dom=notfication-content]' );
+                content.find ( '[data-dom=head]' ).html ( params.headTxt );
+                content.find ( '[data-dom=text]' ).html ( params.contentTxt );
+                content.find ( '[data-dom=confirm]' ).html ( params.confirmButtonTxt ).attr ( ( params.confirmButtonAttr ? params.confirmButtonAttr : '' ) );
+                content.find ( '[data-dom=cancel]' ).html ( params.cancelButtonTxt );
+                console.log ( params );
+                if ( params.callback ) {
+                    params.callback ();
+                }
+            } );
+        } );
+    },
+    /* ======= [ Notfication End ] ======= */
+
+    dom: object => {
+        let callback = object.callback ? object.callback : "";
+        let tags = object.tags;
+        let dom;
+
+        tags.forEach(item => {
+            if (item.child) {
+                dom = $(object.parent)
+                .find(item.name)
+                .find(item.child);
+            } else if (item.name) {
+                dom = $(object.parent).find(item.name);
+            } else {
+                dom = $(object.parent);
+            }
+
+            /* Attr */
+            if (item.attr) {
+                dom.attr(item.attr);
+            }
+
+            /* Css */
+            if (item.css) {
+                dom.css(item.css);
+            }
+
+            /* FadeIn */
+            if (item.fadeIn) {
+                dom.fadeIn(item.fadeIn);
+            }
+
+            /* FadeOut */
+            if (item.fadeOut) {
+                dom.fadeOut(item.fadeOut);
+            }
+
+            /* Text */
+            if (item.text) {
+                dom.text(item.text);
+            }
+
+            /* Add Class */
+            if (item.addClass) {
+                dom.addClass(item.addClass);
+            }
+
+            /* Remove Class */
+            if (item.removeClass) {
+                dom.removeClass(item.removeClass);
+            }
+
+            /* Remove Attribute */
+            if (item.removeAttr) {
+                dom.removeAttr(item.removeAttr);
+            }
+
+            /* Html */
+            if (item.html) {
+                dom.html(item.html);
+            }
+
+            /* Land */
+            if (item.lang) {
+                dom.attr({
+                    "data-lang": item.lang
+                });
+            }
+        });
+
+        if (callback) object.callback();
+    }
 
 
 };

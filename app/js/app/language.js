@@ -98,6 +98,8 @@ Language = {
         txtGain: 'Gain',
         txtYes: 'Yes',
         txtNo: 'No',
+        txtCancel: 'Cancel',
+        txtConfirm: 'Confirm',
         txtErrorPhoneNumber: 'Please enter correct Phone number',
         txtNotPredictionMatch: 'You have no match estimates',
         txtPrPageLink: 'All predictions',
@@ -118,7 +120,18 @@ Language = {
         txtAbout: 'About',
         txtPredictHead: 'Game Predict',
         txtPredictNote: 'Every predict is 500 coins',
-
+        txtPredictAddNotficationHead: 'Are you sure ?',
+        txtPredictAddNotficationText: 'If you guess success, you will gain {point} coin +{bonus} bonus coin',
+        txtFullSuccess: 'Full Success',
+        txtTotalGoals: 'Total Goals',
+        txtBonus: 'Bonus',
+        txtResult: 'Result',
+        txtMatchScore: 'Match Score',
+        txtGoalsAway: 'Goals by Away',
+        txtGoalsHome: 'Goals by Home',
+        txtSuccess: 'Success',
+        txtWrong: 'Wrong',
+        txtWaiting: 'Waiting',
     },
     /* English End */
 

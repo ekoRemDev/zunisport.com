@@ -1,41 +1,31 @@
-<section class="prediction-page js-tab-parent">
-
-    <div class="page-head tab-head radius-5 bg-gradient5">
-        <span class="tab-span js-tab-child tab-link active" data-lang="txtNew"></span>
-        <span class="tab-span js-tab-child tab-link" data-lang="txtWin"></span>
-        <span class="tab-span js-tab-child tab-link" data-lang="txtLose"></span>
-    </div>
-
-    <div class="page-content">
-
-        <div class="pr-match-list display-none" id="app-pr-list-match">
-            <a href="#" class="link"></a>
-            <div class="team home"></div>
-            <div class="score"></div>
-            <div class="team away"></div>
-            <div class="predict">
-                <p></p>
-                <p><strong></strong>: <span></span></p>
-                <p><strong></strong>: <span></span></p>
+<section id="prediction-wrapper" data-dom="predict-wrapper"></section>
+<article class="list display-none" data-dom="predict-list">
+    <div class="head">Wrong Score</div>
+    <a class="remove-button">
+        <i class="icon icon-delete"></i>
+    </a>
+    <div class="inner">
+        <div class="team home">
+            <div class="photo" data-dom="homePhoto">
+                <img class="img" alt="">
             </div>
-            <div class="remove">
-                <span class="icon"></span>
+            <div class="title" data-dom="homeName"></div>
+        </div>
+
+        <div class="score">
+            <div class="top">
+                <div class="item" data-dom="homePredict"></div>
+                <div class="item">:</div>
+                <div class="item" data-dom="awayPredict"></div>
             </div>
+            <div class="bottom" data-dom="score"></div>
         </div>
 
-        <div class="tab-block active" id="pr-new-contain">
-            <div class="_cont"></div>
-            <div class="no-data mt-0 display-none" data-lang="txtPrNoNewMatch"></div>
+        <div class="team away">
+            <div class="photo" data-dom="awayPhoto">
+                <img class="img" alt="">
+            </div>
+            <div class="title" data-dom="awayName"></div>
         </div>
-        <div class="tab-block" id="pr-win-contain">
-            <div class="_cont"></div>
-            <div class="no-data mt-0 display-none" data-lang="txtPrNoWinMatch"></div>
-        </div>
-        <div class="tab-block" id="pr-lose-contain">
-            <div class="_cont"></div>
-            <div class="no-data mt-0 display-none" data-lang="txtPrNoLoseMatch"></div>
-        </div>
-
     </div>
-
-</section>
+</article>

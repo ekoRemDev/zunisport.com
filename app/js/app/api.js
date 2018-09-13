@@ -115,8 +115,16 @@ ApiPath = {
     Contents: {
         list: '/match/contents',
         view: '/match/content/{newsId}'
-    }
+    },
     /* Contents End */
+
+    /* Game */
+    Game: {
+        predictionAdd: ApiUrl + '/game/prediction/add',
+        predictionBonus: ApiUrl + '/game/prediction/bonus',
+        predictionDelete: ApiUrl + '/game/prediction/delete',
+        predictionList: ApiUrl + '/game/prediction/list',
+    }
 
 };
 /* Api Path End */

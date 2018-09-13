@@ -324,23 +324,52 @@ $ ( function () {
     } );
     /* Match Live View End */
 
-    /* Predict Add */
+    /* Predict Add Form */
+    Help.event ( {
+        event: 'click',
+        dom: 'predictAddForm',
+        callback: event => {
+            const token = Help.Token ();
+            const matchId = Help.Url ( 3 );
+            const value = $ ( '[data-input=i1]' ).val () + '-' + $ ( '[data-input=i2]' ).val ();
+            const timeZone = Help.TimeZone ();
+            const dataValue = { token: token, matchId: matchId, predictionValue: value };
+
+            Request.getPredictionBonus ( {
+                value: dataValue,
+                callback: res => {
+                    console.log ( res );
+                    Help.notfication ( {
+                        terms: 'show',
+                        width: '400px',
+                        headTxt: Language[ Help.LangName () ][ 'txtPredictAddNotficationHead' ],
+                        contentTxt: Language[ Help.LangName () ][ 'txtPredictAddNotficationText' ].replace('{point}', res.point).replace('{bonus}', res.bonus),
+                        cancelButtonTxt: Language[ Help.LangName () ][ 'txtCancel' ] ,
+                        confirmButtonTxt: Language[ Help.LangName () ][ 'txtConfirm' ],
+                        confirmButtonAttr: {'data-event':'predictAdd', 'data-value': value},
+                    } );
+                }
+            } );
+
+
+        }
+    } );
+
+    /* Prediction Add */
     Help.event ( {
         event: 'click',
         dom: 'predictAdd',
         callback: event => {
+            const value = {token: Help.Token(), matchId: Help.Url(3), predictionValue: event.attr('data-value')}
             Request.setPrediction({
-                value: {
-                    token: '',
-                    matchId: '',
-                    predictionType: '',
-                    predictionValue: '',
-                    predictionAmount: ''
-                },
+                value: value,
                 callback: res => {
-                    console.log ( res );
+                    const modal = $('[data-dom=modal]');
+                    if (res.code == 200) {
+                        Help.Redirect();
+                    }
                 }
-            });
+            })
         }
     } );
 

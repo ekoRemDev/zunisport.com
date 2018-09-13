@@ -343,7 +343,31 @@ Request = {
     /* Set Prediction */
     setPrediction: params => {
         Help.requset({
-            url: ApiUrl + ApiPath.Predictions.add,
+            url: ApiPath.Game.predictionAdd,
+            type: 'post',
+            value: params.value,
+            callback: res => {
+                params.callback(res);
+            }
+        })
+    },
+
+    /* Get Prediction Bonus */
+    getPredictionBonus: params => {
+        Help.requset({
+            url: ApiPath.Game.predictionBonus,
+            type: 'post',
+            value: params.value,
+            callback: res => {
+                params.callback(res);
+            }
+        })
+    },
+
+    /* Get Prediction List */
+    getPredictionList: params => {
+        Help.requset({
+            url: ApiPath.Game.predictionList,
             type: 'post',
             value: params.value,
             callback: res => {

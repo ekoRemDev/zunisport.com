@@ -120,16 +120,9 @@ Methods = {
                 ContainerBlock.load("/" + PathDir + "/page/default/prediction.html", function () {
                     Help.Loading('hide');
 
-                    Handler.PredictionPageList();
+                    //Handler.PredictionList();
 
-                    LanguageChange([
-                        'txtNew',
-                        'txtWin',
-                        'txtLose',
-                        'txtPrNoNewMatch',
-                        'txtPrNoWinMatch',
-                        'txtPrNoLoseMatch',
-                    ]);
+
                 });
             }
             else {

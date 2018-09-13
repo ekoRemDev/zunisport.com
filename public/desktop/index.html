@@ -2,13 +2,10 @@
 <html lang="en">
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="refresh" content="300"/>
     <meta name="apple-web-app-capable" content="yes">
     <meta name="apple-web-app-status-bar-style" content="black">
-
-
 
     <!-- Include CSS -->
     <link rel="stylesheet" href="/style/path/css/style.css?v1.0.8">
@@ -246,13 +243,13 @@
     <!-- Loading Gif End -->
 
     <!-- Modal -->
-    <div class="modal-block js-modal-block">
-        <div class="modal-block-cover"></div>
-        <div class="block-container radius-5 modal-contaie">
-            <div class="block-head">
+    <div class="modal-block js-modal-block" data-dom="modal">
+        <div class="modal-block-cover" data-dom="cover"></div>
+        <div class="block-container radius-5 modal-contaie" data-dom="container">
+            <div class="block-head" data-dom="head">
                 <span class="icon icon-cancel"></span>
             </div>
-            <div class="block-content"></div>
+            <div class="block-content" data-dom="content"></div>
         </div>
     </div>
     <!-- Modal End -->

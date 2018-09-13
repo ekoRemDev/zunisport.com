@@ -1716,12 +1716,6 @@ Events = {
                     }
                 }
             }
-            else {
-                $('#prediction-tab-content').remove();
-                $('#tab-prediction').remove();
-                $('#tab-statistic').removeClass('display-none');
-            }
-
 
         });
     },

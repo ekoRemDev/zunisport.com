@@ -372,19 +372,106 @@
 
                 <!--</div>-->
 
-                <div class="predict-content">
+                <div class="predict-content display-none" data-dom="predict-form">
                     <div class="head" data-lang="txtPredictHead"></div>
                     <div class="pr-content">
                         <div class="input-content">
-                            <input type="text" class="input" maxlength="2" onkeypress="Help.InputValue(event,$(this))">
+                            <select class="input" data-input="i1">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                            </select>
                             <div class="input">:</div>
-                            <input type="text" class="input" maxlength="2" onkeypress="Help.InputValue(event,$(this))">
+                            <select class="input" data-input="i2">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                            </select>
                         </div>
                         <div class="buttons">
-                            <button type="submit" class="button" data-dom="predict-set-button" data-event="predictAdd" data-lang="txtPrButton"></button>
+                            <button type="submit" class="button" data-dom="predict-set-button" data-event="predictAddForm" data-lang="txtPrButton"></button>
                             <div class="bt-txt" data-lang="txtPredictNote"></div>
                         </div>
                     </div>
+                </div>
+
+                <div class="predict-container display-none" data-dom="predict-container">
+                    <div class="head" data-dom="head">
+                        <div class="txt" data-dom="headTitle"></div>
+                        <a class="delete icon-delete"></a>
+                    </div>
+                    <div class="score">
+                        <div class="item" data-dom="home">2</div>
+                        <div class="item">:</div>
+                        <div class="item" data-dom="away">2</div>
+                    </div>
+                    <div class="result">
+                        <div class="list" data-dom="bonus">
+                            <div class="name" data-lang="txtBonus"></div>
+                            <div class="coin" data-dom="coin">&nbsp;</div>
+                            <div class="_alert" data-dom="status"></div>
+                        </div>
+                        <div class="list" data-dom="result">
+                            <div class="name" data-lang="txtResult"></div>
+                            <div class="coin" data-dom="coin">&nbsp;</div>
+                            <div class="_alert" data-dom="status"></div>
+                        </div>
+                        <div class="list" data-dom="match-score">
+                            <div class="name" data-lang="txtMatchScore"></div>
+                            <div class="coin" data-dom="coin">&nbsp;</div>
+                            <div class="_alert" data-dom="status"></div>
+                        </div>
+                        <div class="list" data-dom="total-goals">
+                            <div class="name" data-lang="txtTotalGoals"></div>
+                            <div class="coin" data-dom="coin">&nbsp;</div>
+                            <div class="_alert" data-dom="status"></div>
+                        </div>
+                        <div class="list" data-dom="goals-away">
+                            <div class="name" data-lang="txtGoalsAway">Goals by Away</div>
+                            <div class="coin" data-dom="coin">&nbsp;</div>
+                            <div class="_alert" data-dom="status"></div>
+                        </div>
+                        <div class="list" data-dom="goals-home">
+                            <div class="name" data-lang="txtGoalsHome"></div>
+                            <div class="coin" data-dom="coin">&nbsp;</div>
+                            <div class="_alert" data-dom="status"></div>
+                        </div>
+                    </div>
+                    <div class="note" data-lang="txtPredictAddNotficationText"></div>
                 </div>
 
             </div>
